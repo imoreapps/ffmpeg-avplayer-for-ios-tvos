@@ -1,0 +1,2 @@
+*.a filter=lfs diff=lfs merge=lfs -text
+libs/AVPlayerTouch.framework/Versions/A/AVPlayerTouch filter=lfs diff=lfs merge=lfs -text
