@@ -53,10 +53,6 @@ Now AVPlayer framework is able to play high resolution videos by using hardware 
  - Embedded subtitle formats support.
  - Custom subtitle font.
 
-###What do you need to do before compiling it?
- - git clone it
- - git submodule update --init
-
 ###Dolby License
 
 DO NOT use dolby tech in your iOS app unless you have a dolby license.
