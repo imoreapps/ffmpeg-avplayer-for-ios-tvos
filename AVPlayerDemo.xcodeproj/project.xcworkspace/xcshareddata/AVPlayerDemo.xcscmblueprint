@@ -1,16 +1,18 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CB11C61A0719C6AA3C3F3EB73F63EA114D6B6B90",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AF6924B4193EC39876ED476B1881524E7877415D",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "906E902657CD9BF43DD0B51BB7EF0FBE4F90CDB4" : 0,
-    "CB11C61A0719C6AA3C3F3EB73F63EA114D6B6B90" : 0
+    "AF6924B4193EC39876ED476B1881524E7877415D" : 0,
+    "CB11C61A0719C6AA3C3F3EB73F63EA114D6B6B90" : 0,
+    "906E902657CD9BF43DD0B51BB7EF0FBE4F90CDB4" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A295E41C-230B-4DA2-81DD-E0212DB75F4F",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "906E902657CD9BF43DD0B51BB7EF0FBE4F90CDB4" : "ffmpeg-avplayer-for-ios\/ios-binary-libs\/",
-    "CB11C61A0719C6AA3C3F3EB73F63EA114D6B6B90" : "ffmpeg-avplayer-for-ios"
+    "AF6924B4193EC39876ED476B1881524E7877415D" : "ios-avplayer-framework\/",
+    "CB11C61A0719C6AA3C3F3EB73F63EA114D6B6B90" : "ffmpeg-avplayer-for-ios",
+    "906E902657CD9BF43DD0B51BB7EF0FBE4F90CDB4" : "ffmpeg-avplayer-for-ios\/ios-binary-libs\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "AVPlayerDemo",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -20,6 +22,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/iMoreApps\/ios-binary-libs.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "906E902657CD9BF43DD0B51BB7EF0FBE4F90CDB4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/iMoreApps\/ios-avplayer-framework.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AF6924B4193EC39876ED476B1881524E7877415D"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/iMoreApps\/ffmpeg-avplayer-for-ios.git",

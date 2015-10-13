@@ -21,7 +21,7 @@ Now AVPlayer framework is able to play high resolution videos by using hardware 
 ###Compile Requirements
 
  - ARC
- - XCode 7.1 & iOS SDK 9.0
+ - XCode 7.0.1 & iOS SDK 9.0
 
 ###Deploy Requirements
 
