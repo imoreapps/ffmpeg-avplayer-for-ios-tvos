@@ -15,8 +15,10 @@ Note: If you need more customized protocols (such as Samba etc), please feel fre
 [![](https://dl.dropboxusercontent.com/u/87201024/avplayer/5.png)](https://dl.dropboxusercontent.com/u/87201024/avplayer/5.png)
 
 ###Note
-
 Now AVPlayer framework is able to play high resolution videos by using hardware accelerator feature embedded in iPhone/iPad even for MKV or AVI in H264, but this feature requires iOS 8 or later.
+ 
+###Preparation work
+The repository uses the Git Large File Storage (lfs) service, so you need to install the git lfs plugin before you clone the repository. How to install the git lfs plugin? Very easy, please reference [HERE](https://git-lfs.github.com/).
 
 ###Compile Requirements
 
