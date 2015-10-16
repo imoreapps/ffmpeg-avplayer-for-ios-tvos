@@ -5,17 +5,9 @@ A tiny but powerful av player framework for iOS. The SDK can play the most audio
 
 AVPlayer SDK is written for iOS developers who want to add powerful av player to their app using a couple lines of code. Behind the scenes av player relies on the iOS OpenGL ES 2.0 framework and the open source LGPL licensed FFmpeg library.
 
-Note: If you need more customized protocols (such as Samba etc), please feel free to contact us for more details.
-
-[![](https://dl.dropboxusercontent.com/u/87201024/avplayer/1.png)](https://dl.dropboxusercontent.com/u/87201024/avplayer/1.png)
-[![](https://dl.dropboxusercontent.com/u/87201024/avplayer/2.png)](https://dl.dropboxusercontent.com/u/87201024/avplayer/2.png)
-[![](https://dl.dropboxusercontent.com/u/87201024/avplayer/3.png)](https://dl.dropboxusercontent.com/u/87201024/avplayer/3.png)
-[![](https://dl.dropboxusercontent.com/u/87201024/avplayer/6.png)](https://dl.dropboxusercontent.com/u/87201024/avplayer/6.png)
-[![](https://dl.dropboxusercontent.com/u/87201024/avplayer/4.png)](https://dl.dropboxusercontent.com/u/87201024/avplayer/4.png)
-[![](https://dl.dropboxusercontent.com/u/87201024/avplayer/5.png)](https://dl.dropboxusercontent.com/u/87201024/avplayer/5.png)
-
 ###Note
-Now AVPlayer framework is able to play high resolution videos by using hardware accelerator feature embedded in iPhone/iPad even for MKV or AVI in H264, but this feature requires iOS 8 or later.
+- If you need more customized protocols (such as Samba etc), please feel free to contact us for more details.
+- Now AVPlayer framework is able to play high resolution videos by using hardware accelerator feature embedded in iPhone/iPad even for MKV or AVI in H264, but this feature requires iOS 8 or later.
  
 ###Preparation work
 The repository uses the Git Large File Storage (lfs) service, so you need to install the git lfs plugin before you clone the repository. How to install the git lfs plugin? Very easy, please reference [HERE](https://git-lfs.github.com/).
@@ -63,8 +55,15 @@ The repository uses the Git Large File Storage (lfs) service, so you need to ins
 DO NOT use dolby tech in your iOS app unless you have a dolby license.
 Dolby Digital(AC3), Dolby Digital Plus(E-AC3) and Dolby TrueHD(MLP).
 
+###DEMO Screeshots
+[![](https://dl.dropboxusercontent.com/u/87201024/avplayer/1.png)](https://dl.dropboxusercontent.com/u/87201024/avplayer/1.png)
+[![](https://dl.dropboxusercontent.com/u/87201024/avplayer/2.png)](https://dl.dropboxusercontent.com/u/87201024/avplayer/2.png)
+[![](https://dl.dropboxusercontent.com/u/87201024/avplayer/3.png)](https://dl.dropboxusercontent.com/u/87201024/avplayer/3.png)
+[![](https://dl.dropboxusercontent.com/u/87201024/avplayer/6.png)](https://dl.dropboxusercontent.com/u/87201024/avplayer/6.png)
+[![](https://dl.dropboxusercontent.com/u/87201024/avplayer/4.png)](https://dl.dropboxusercontent.com/u/87201024/avplayer/4.png)
+[![](https://dl.dropboxusercontent.com/u/87201024/avplayer/5.png)](https://dl.dropboxusercontent.com/u/87201024/avplayer/5.png)
+
 ###Contact us
 
  - Twitter: @imoreapps
- - Sina Weibo: @imoreapps
  - Email: imoreapps@gmail.com
