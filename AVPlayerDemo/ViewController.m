@@ -42,9 +42,7 @@
   // Network files
   _networkfiles =
   @[
-    @{@"url":@"rtsp://218.204.223.237:554/live/1/66251FC11353191F/e7ooqwcfbqjoo80j.sdp",@"title":@"RTSP Stream"},
-    @{@"url":@"rtmp://edge01.fms.dutchview.nl/botr/bunny.flv",@"title":@"rtmp://Bunny.FLV"},
-    @{@"url":@"http://hot.vrs.sohu.com/ipad1407291_4596271359934_4618512.m3u8", @"title":@"Youku m3u8 video"},
+    @{@"url":@"rtsp://a2047.v1412b.c1412.g.vq.akamaistream.net/5/2047/1412/1_h264_350/1a1a1ae555c531960166df4dbc3095c327960d7be756b71b49aa1576e344addb3ead1a497aaedf11/8848125_1_350.mov",@"title":@"RTSP Stream"},
     @{@"url":@"http://live.nwk4.yupptv.tv/nwk4/smil:mtunes.smil/playlist.m3u8", @"title":@"Live video"},
     
     // for MJPEG av format, we recommend that you pass the input av format name for the player.
