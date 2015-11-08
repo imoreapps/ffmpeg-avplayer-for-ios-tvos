@@ -12,12 +12,12 @@ AVPlayer SDK is written for iOS developers who want to add powerful av player to
 ###Compile Requirements
 
  - ARC
- - XCode 7.0.1 & iOS SDK 9.0
+ - XCode 7.x & iOS SDK 9.x
 
 ###Deploy Requirements
 
  - ARMv7, ARMv7s, ARM64 and x86-64 architectures
- - Deploy target iOS 9.0
+ - Deploy target iOS 7.0
 
 ###Features
 
