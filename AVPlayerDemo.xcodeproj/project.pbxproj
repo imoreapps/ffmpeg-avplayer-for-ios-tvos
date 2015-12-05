@@ -35,7 +35,7 @@
 		18B8E7C518A0C737003ACB1D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B8E7C418A0C737003ACB1D /* AVFoundation.framework */; };
 		18B8E7E218A21890003ACB1D /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B8E7E118A21890003ACB1D /* PlayerViewController.m */; };
 		18D18A821B8EE5C3009499A9 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D18A811B8EE5C3009499A9 /* VideoToolbox.framework */; };
-		18D6C7471BCD2C4500F57FC8 /* AVPlayerTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D6C7441BCD2C4500F57FC8 /* AVPlayerTouch.framework */; settings = {ASSET_TAGS = (); }; };
+		18D6C7471BCD2C4500F57FC8 /* AVPlayerTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D6C7441BCD2C4500F57FC8 /* AVPlayerTouch.framework */; };
 		18DA08BB18BC5AD500D2C142 /* test.ass in Resources */ = {isa = PBXBuildFile; fileRef = 18DA08BA18BC5AD500D2C142 /* test.ass */; };
 		18DA08E818BF50A400D2C142 /* test.srt in Resources */ = {isa = PBXBuildFile; fileRef = 18DA08E718BF50A400D2C142 /* test.srt */; };
 /* End PBXBuildFile section */
