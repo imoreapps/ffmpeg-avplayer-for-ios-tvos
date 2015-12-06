@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>tvOSAVPlayerDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1870D3F81C1409C700276B0D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>18A0BADD18A0C3FF008AA66D</key>
 		<dict>
 			<key>primary</key>
