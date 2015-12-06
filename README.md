@@ -1,9 +1,9 @@
 
 [![](https://dl.dropboxusercontent.com/u/87201024/avplayer/banner.jpg)](https://dl.dropboxusercontent.com/u/87201024/avplayer/banner.jpg)
 
-A tiny but powerful av player framework for iOS. The SDK can play the most audio and video formats (Includes network audio and video streams), no convert hassles, no VLC and SDL dependent.
+A tiny but powerful av player framework for iOS and Apple TV OS. The SDK can play the most audio and video formats (Includes network audio and video streams), no convert hassles, no VLC and SDL dependent.
 
-AVPlayer SDK is written for iOS developers who want to add powerful av player to their app using a couple lines of code. Behind the scenes av player relies on the iOS OpenGL ES 2.0 framework and the open source LGPL licensed FFmpeg library.
+AVPlayer framework is written for iOS and Apple TV OS developers who want to add powerful av player to their app using a couple lines of code. Behind the scenes av player relies on the iOS OpenGL ES 2.0 framework and the open source LGPL licensed FFmpeg library.
 
 ###Note
 - If you need more customized protocols (such as Samba etc), please feel free to contact us for more details.
@@ -17,7 +17,8 @@ AVPlayer SDK is written for iOS developers who want to add powerful av player to
 ###Deploy Requirements
 
  - ARMv7, ARMv7s, ARM64 and x86-64 architectures
- - Deploy target iOS 7.0
+ - iOS version: Deploy target iOS 7.0
+ - Apple TV OS version: Deploy target 9.0
 
 ###Features
 
@@ -25,7 +26,7 @@ AVPlayer SDK is written for iOS developers who want to add powerful av player to
  - Bitcode support.
  - armv7, armv7s, arm64 and x86-64 support.
  - file, ftp, samba, http, https, rtsp and rtmp protocols support.
- - Hardware decoder support for H264 format. (iOS 8 or later)
+ - Hardware decoder support for H264 format. (iOS 8 or later, only available on iOS platform.)
  - Rich options of ffmpeg library support.
  - Disable audio or video stream.
  - Parse audio and video duration, frame size infos.
@@ -41,11 +42,11 @@ AVPlayer SDK is written for iOS developers who want to add powerful av player to
  - Play, pause, resume, stop, fast forward, fast backward, seek position actions support.
  - Audio session interruption handler support
  - Delegate support, you can get notification when state, playback progress, buffering progress changed and enter/exit full screen mode.
- - Save, Restore playback progress support (Objective-c block style).
+ - Save, Restore playback progress support (block style).
  - Multiple audio, subtitle streams support.
  - SRT, ASS, SSA, SMI external subtitle formats support.
  - Embedded subtitle formats support.
- - Custom subtitle font.
+ - Custom subtitle font, text color.
 
 ###Dolby License
 
