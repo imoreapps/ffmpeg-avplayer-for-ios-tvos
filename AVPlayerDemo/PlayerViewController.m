@@ -387,6 +387,8 @@
       setStatusBarStyle:UIStatusBarStyleLightContent
                animated:YES];
   [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+
+  _volumeSlider.value = [FFAVPlayerController currentVolume];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {

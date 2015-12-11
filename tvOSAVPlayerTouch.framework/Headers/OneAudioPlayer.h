@@ -22,6 +22,12 @@
 @property (nonatomic, weak) NSObject<OneAudioPlayerDelegate> *delegate;
 
 /*
+ * Toggle the universal mode, default is YES.
+ * YES - indicate that player always uses FFmpeg to decode, no matter what format it is.
+ */
+@property (nonatomic) BOOL enableUniversalMode;
+
+/*
  * The URL of av resource, now supports file, http and smb protocols.
  */
 @property (nonatomic, strong, readonly) NSURL *mediaURL;
