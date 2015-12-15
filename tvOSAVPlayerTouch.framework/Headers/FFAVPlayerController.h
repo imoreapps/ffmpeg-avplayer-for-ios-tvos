@@ -73,6 +73,7 @@ extern NSString *const AVOptionNameHttpCookies;     // (HTTP) set cookies to be 
 
 @property (nonatomic, assign) BOOL allowBackgroundPlayback;  // default NO
 @property (nonatomic, assign) BOOL enableBuiltinSubtitleRender; // default YES
+@property (nonatomic, assign) float videoAspectRatio; // default 0
 
 /**
  * "shouldAutoPlay" and "streamDiscardOption" properties

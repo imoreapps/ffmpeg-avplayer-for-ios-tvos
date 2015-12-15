@@ -31,7 +31,11 @@
   UIButton *_forwardButton;
   UILabel *_progressLabel;
   UILabel *_leftLabel;
+  
+  // Aspect ratio
   UIBarButtonItem *_fullscreenButton;
+  NSArray *_videoAspectRatios;
+  NSInteger _videoAspectRatioIndex;
 
   AdjustSpeedView *_adjustSpeedView;
   VideoEffectView *_videoEffectView;
@@ -58,6 +62,16 @@
   // Other initalization
   _hudVisible = YES;
   _isPlayingBeforeInterrupted = NO;
+  
+  _videoAspectRatioIndex = 0;
+  _videoAspectRatios = @[ @(0),       // Default
+                          @(-1),      // FULL Screen
+                          @(4/3.0f),  // 4:3
+                          @(5/4.0f),  // 5:4
+                          @(16/9.0f), // 16:9
+                          @(16/10.0f),// 16:10
+                          @(2.21/1.0f)// 2.21:1
+                          ];
 }
 
 - (id)init {
@@ -300,8 +314,7 @@
            forControlEvents:UIControlEventTouchUpInside];
   [_bottomHUD addSubview:_forwardButton];
 
-  _volumeSlider =
-      [[UISlider alloc] initWithFrame:CGRectMake(10, 55, width - (10 * 2), 20)];
+  _volumeSlider = [[UISlider alloc] initWithFrame:CGRectMake(10, 55, width - (10 * 2), 20)];
   _volumeSlider.autoresizingMask = UIViewAutoresizingFlexibleWidth;
   [_volumeSlider addTarget:self
                     action:@selector(volumeDidChange:)
@@ -572,13 +585,13 @@
 - (void)FFAVPlayerControllerDidEnterFullscreenMode:
         (FFAVPlayerController *)controller {
   // Update full screen bar button
-  [_fullscreenButton setImage:[UIImage imageNamed:@"avplayer.bundle/zoomout"]];
+//  [_fullscreenButton setImage:[UIImage imageNamed:@"avplayer.bundle/zoomout"]];
 }
 
 - (void)FFAVPlayerControllerDidExitFullscreenMode:
         (FFAVPlayerController *)controller {
   // Update full screen bar button
-  [_fullscreenButton setImage:[UIImage imageNamed:@"avplayer.bundle/zoomin"]];
+//  [_fullscreenButton setImage:[UIImage imageNamed:@"avplayer.bundle/zoomin"]];
 }
 
 - (void)FFAVPlayerControllerDidBufferingProgressChange:(FFAVPlayerController *)controller progress:(double)progress {
@@ -818,8 +831,21 @@
 
 - (void)fullscreenDidTouch:(id)sender {
   if ([_avplayController hasVideo]) {
-    BOOL isFullscreen = ![_avplayController isFullscreen];
-    [_avplayController fullScreen:isFullscreen];
+//    BOOL isFullscreen = ![_avplayController isFullscreen];
+//    [_avplayController fullScreen:isFullscreen];
+    
+    _videoAspectRatioIndex++;
+    if (_videoAspectRatioIndex >= _videoAspectRatios.count) {
+      _videoAspectRatioIndex = 0;
+    }
+    
+    CGFloat aspectRatio = [_videoAspectRatios[_videoAspectRatioIndex] floatValue];
+    if (aspectRatio < 0) {
+      [_avplayController fullScreen:YES];
+    } else {
+      [_avplayController fullScreen:NO];
+      _avplayController.videoAspectRatio = aspectRatio;
+    }
   }
 }
 
