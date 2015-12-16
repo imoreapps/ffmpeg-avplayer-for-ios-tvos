@@ -6,8 +6,7 @@ A tiny but powerful av player framework for iOS and Apple TV OS. The SDK can pla
 AVPlayer framework is written for iOS and Apple TV OS developers who want to add powerful av player to their app using a couple lines of code. Behind the scenes av player relies on the iOS OpenGL ES 2.0 framework and the open source LGPL licensed FFmpeg library.
 
 ###Note
-- If you need more customized protocols (such as Samba etc), please feel free to contact us for more details.
-- Now AVPlayer framework is able to play high resolution videos by using hardware accelerator feature embedded in iPhone/iPad even for MKV or AVI in H264, but this feature requires iOS 8 or later.
+- Now AVPlayer framework is able to play high resolution videos by using hardware accelerator feature embedded in iPhone/iPad even for MKV or AVI in H264, but this feature requires arm64, iOS 8 or later devices.
  
 ###Compile Requirements
 
@@ -17,8 +16,8 @@ AVPlayer framework is written for iOS and Apple TV OS developers who want to add
 ###Deploy Requirements
 
  - ARMv7, ARMv7s, ARM64 and x86-64 architectures
- - iOS version: Deploy target iOS 7.0
- - Apple TV OS version: Deploy target 9.0
+ - iOS version: Deploy target iOS 7.0 or later
+ - Apple TV OS version: Deploy target 9.0 or later
 
 ###Features
 
@@ -37,6 +36,7 @@ AVPlayer framework is written for iOS and Apple TV OS developers who want to add
  - Brightness, contrast and saturation control.
  - Background audio, video playback support.
  - Full screen mode support.
+ - Aspect ratio option support.
  - System volume control.
  - Play from a specified time position.
  - Play, pause, resume, stop, fast forward, fast backward, seek position actions support.
