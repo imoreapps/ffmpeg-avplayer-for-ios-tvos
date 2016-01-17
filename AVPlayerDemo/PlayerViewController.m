@@ -44,6 +44,7 @@
   UIView *_glView;
   UIImageView *_coverImageView;
   UITapGestureRecognizer *_tapGestureRecognizer;
+  UIActivityIndicatorView *_loadingIndicatorView;
 
   // Interruption handler
   BOOL _isPlayingBeforeInterrupted;
@@ -320,6 +321,11 @@
                     action:@selector(volumeDidChange:)
           forControlEvents:UIControlEventValueChanged];
   [_bottomHUD addSubview:_volumeSlider];
+  
+  // Loading Indicator View
+  _loadingIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+  _loadingIndicatorView.hidesWhenStopped = YES;
+  [self.view addSubview:_loadingIndicatorView];
 }
 
 - (UIImageView *)coverImageView {
@@ -427,6 +433,7 @@
   float y = CGRectGetMidY(self.view.bounds);
 
   _adjustSpeedView.center = _videoEffectView.center = CGPointMake(x, y);
+  _loadingIndicatorView.center = CGPointMake(x, y);
 }
 
 #pragma mark - Device Interface Rotation Handler
@@ -601,6 +608,27 @@
 
 - (void)FFAVPlayerControllerDidBitrateChange:(FFAVPlayerController *)controller bitrate:(NSInteger)bitrate {
   // Bitrate changed
+}
+
+// real framerate was changed
+- (void)FFAVPlayerControllerDidFramerateChange:(FFAVPlayerController *)controller framerate:(NSInteger)framerate {
+  // Log the bitrate info
+  // NSLog(@"framerate : %ld", framerate);
+  
+  /*
+   * below codes are just for network playback situation.
+   * so you can discard below codes for local playback situation.
+   */
+  if (framerate > controller.avFramerate/2) {
+    if (_loadingIndicatorView.isAnimating) {
+      [_loadingIndicatorView stopAnimating];
+    }
+  } else if ([controller realtimeBitrate] < controller.avBitrate/2) {
+    if (!_loadingIndicatorView.isAnimating) {
+      [self.view bringSubviewToFront:_loadingIndicatorView];
+      [_loadingIndicatorView startAnimating];
+    }
+  }
 }
 
 #pragma mark - AVAudioSession Manager

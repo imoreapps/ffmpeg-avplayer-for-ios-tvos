@@ -82,11 +82,20 @@ extern NSString *const AVOptionNameHttpCookies;     // (HTTP) set cookies to be 
 @property (nonatomic, assign) BOOL shouldAutoPlay;          // default NO
 @property (nonatomic, assign) AVStreamDiscardOption streamDiscardOption;  // default kAVStreamDiscardOptionNone
 
+/**
+ * av tracks and the current av track index
+ */
 @property (nonatomic, readonly) NSInteger currentAudioTrack;
 @property (nonatomic, strong, readonly) NSArray *audioTracks;
 
 @property (nonatomic, readonly) NSInteger currentSubtitleTrack;
 @property (nonatomic, strong, readonly) NSArray *subtitleTracks;
+
+/**
+ * av codec bitrate and video frame rate
+ */
+@property (nonatomic, readonly) NSInteger avBitrate;
+@property (nonatomic, readonly) NSInteger avFramerate;
 
 /**
  * Adjust contrast and saturation of the video display.
@@ -264,30 +273,29 @@ extern NSString *const AVOptionNameHttpCookies;     // (HTTP) set cookies to be 
 - (void)seekto:(double)ti;
 
 /*
- * Enable real frame rate calculator.
+ * Enable tracking the realtime frame rate changes.
  * @enable - YES to enable or NO to disable.
  * @This function does not return a value.
  */
-- (void)enableCalcFramerate:(BOOL)enable;
+- (void)enableTrackFramerate:(BOOL)enable;
 
 /*
- * Get real frame rate.
- * @This function return real frame rate.
+ * Get the realtime frame rate.
+ * @This function return real frame rate in fps.
  */
-- (int)framerate;
-
+- (int)realtimeFramerate;
 /*
- * Enable bit rate calculator.
+ * Enable tracking the realtime bit rate changes.
  * @enable - YES to enable or NO to disable.
  * @This function does not return a value.
  */
-- (void)enableCalcBitrate:(BOOL)enable;
+- (void)enableTrackBitrate:(BOOL)enable;
 
 /*
- * Get real bit rate.
- * @This function return real bit rate.
+ * Get the realtime bit rate.
+ * @This function return real bit rate in kbit/s.
  */
-- (int)bitrate;
+- (int)realtimeBitrate;
 
 /*
  * Get buffering progress.
@@ -297,16 +305,16 @@ extern NSString *const AVOptionNameHttpCookies;     // (HTTP) set cookies to be 
 
 /*
  * Get playback speed.
- * @This function return current playback speed (0.5~2.0f).
- */
-- (float)playbackSpeed;
-
-/*
- * Get playback speed.
  * @speed - new playback speed.
  * @This function does not return a value.
  */
 - (void)setPlaybackSpeed:(float)speed;
+
+/*
+ * Get playback speed.
+ * @This function return current playback speed (0.5~2.0f).
+ */
+- (float)playbackSpeed;
 
 #if TARGET_OS_IOS
 
@@ -357,8 +365,11 @@ extern NSString *const AVOptionNameHttpCookies;     // (HTTP) set cookies to be 
 // current buffering progress was changed
 - (void)FFAVPlayerControllerDidBufferingProgressChange:(FFAVPlayerController *)controller progress:(double)progress;
 
-// current bitrate was changed
+// real bitrate was changed
 - (void)FFAVPlayerControllerDidBitrateChange:(FFAVPlayerController *)controller bitrate:(NSInteger)bitrate;
+
+// real framerate was changed
+- (void)FFAVPlayerControllerDidFramerateChange:(FFAVPlayerController *)controller framerate:(NSInteger)framerate;
 
 // current subtitle was changed
 - (void)FFAVPlayerControllerDidSubtitleChange:(FFAVPlayerController *)controller subtitleItem:(FFAVSubtitleItem *)subtitleItem;
