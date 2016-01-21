@@ -623,7 +623,8 @@
     if (_loadingIndicatorView.isAnimating) {
       [_loadingIndicatorView stopAnimating];
     }
-  } else if ([controller realtimeBitrate] < controller.avBitrate/2) {
+  } else if ([controller realtimeBitrate] < controller.avBitrate/2 ||
+             [controller bufferingProgress] < DBL_EPSILON) {
     if (!_loadingIndicatorView.isAnimating) {
       [self.view bringSubviewToFront:_loadingIndicatorView];
       [_loadingIndicatorView startAnimating];
