@@ -14,6 +14,7 @@
 @property (nonatomic, weak) IBOutlet UILabel *videoSizeLabel;
 @property (nonatomic, weak) IBOutlet UIImageView *thumbnailsImageView;
 
-@property (nonatomic, strong) NSString *moviePath;
+@property (nonatomic, strong) NSURL *mediaURL;
+@property (nonatomic, strong) NSString *avFormatName;
 
 @end

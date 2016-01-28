@@ -17,7 +17,7 @@
 
 @interface FFAVParser : NSObject
 
-@property (nonatomic, readonly) NSString *path;
+@property (readonly, nonatomic, strong) NSURL *url;
 @property (readonly, nonatomic) NSTimeInterval duration;
 @property (readonly, nonatomic) NSUInteger frameWidth;
 @property (readonly, nonatomic) NSUInteger frameHeight;
@@ -32,10 +32,11 @@
 + (void)showEncoders;
 
 /*
- * open av source
- * return YES if success, otherwise return NO.
+ * Open media file at path.
+ * @url - path to media source.
+ * @If failed, return NO, otherwise return YES.
  */
-- (BOOL)open:(NSString *)path;
+- (BOOL)openMedia:(NSURL *)url withOptions:(NSDictionary *)options;
 
 /*
  * Has Dolby Digital, audio, video, subtitle stream.
@@ -59,9 +60,7 @@
  * then returns nil FFAVSubtitle object.
  * "fps" default value is 60.
  */
-+ (FFAVSubtitle *)parseSubtitleFile:(NSString *)path
-                           encoding:(NSStringEncoding)encoding
-                          frameRate:(double)fps;
++ (FFAVSubtitle *)parseSubtitleFile:(NSString *)path encoding:(NSStringEncoding)encoding frameRate:(double)fps;
 - (FFAVSubtitle *)parseSubtitleStreamAtIndex:(NSInteger)streamIndex encoding:(NSStringEncoding)encoding; // streamIndex < self.numberOfSubtitleStreams
 
 @end
