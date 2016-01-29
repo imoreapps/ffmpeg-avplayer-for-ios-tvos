@@ -24,7 +24,7 @@ AVPlayer framework is written for iOS and Apple TV OS developers who want to add
  - ARC support.
  - Bitcode support.
  - armv7, armv7s, arm64 and x86-64 support.
- - file, ftp, samba, http, https, rtsp and rtmp protocols support.
+ - file, ftp, http, https, rtsp, rtmp and most of FFmpeg protocols support.
  - Hardware decoder support for H264 format. (iOS 8 or later, only available on iOS platform.)
  - Rich options of ffmpeg library support.
  - Disable audio or video stream.

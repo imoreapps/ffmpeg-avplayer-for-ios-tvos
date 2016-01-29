@@ -32,6 +32,12 @@
 + (void)showEncoders;
 
 /*
+ * retrieve the built-in supported protocol list.
+ * @return - as title.
+ */
++ (NSArray *)supportedProtocols;
+
+/*
  * Open media file at path.
  * @url - path to media source.
  * @If failed, return NO, otherwise return YES.
