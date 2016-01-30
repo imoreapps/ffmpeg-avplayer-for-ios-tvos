@@ -615,6 +615,7 @@
   // Log the bitrate info
   // NSLog(@"framerate : %ld", framerate);
   
+#if 0
   /*
    * below codes are just for network playback situation.
    * so you can discard below codes for local playback situation.
@@ -630,6 +631,7 @@
       [_loadingIndicatorView startAnimating];
     }
   }
+#endif
 }
 
 #pragma mark - AVAudioSession Manager
