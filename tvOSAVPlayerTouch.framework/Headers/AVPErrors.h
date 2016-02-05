@@ -11,7 +11,32 @@
 extern NSString *const AVPErrorDomain;
 
 NS_ENUM(NSInteger) {
-  AVPErrorInvalidLicense = -1000,
-  AVPErrorExpiredLicense = -1001,
-  
+  AVPErrorInvalidLicense = -1500,
+  AVPErrorExpiredLicense,
+
+  /*
+   * FFmpeg component error codes
+   */
+  AVPErrorFFmpegUnknown = -2000,
+  AVPErrorFFmpegBSFNotFound,
+  AVPErrorFFmpegBUG,
+  AVPErrorFFmpegBufferToolSmall,
+  AVPErrorFFmpegDecoderNotFound,
+  AVPErrorFFmpegDemuxerNotFound,
+  AVPErrorFFmpegEOF,
+  AVPErrorFFmpegExit,
+  AVPErrorFFmpegExternal,
+  AVPErrorFFmpegInvalidData,
+  AVPErrorFFmpegOptionNotFound,
+  AVPErrorFFmpegProtocolNotFound,
+  AVPErrorFFmpegStreamNotFound,
+  AVPErrorFFmpegExperimental,
+  AVPErrorFFmpegInputChanged,
+
+  AVPErrorFFmpegHttpBadRequest,
+  AVPErrorFFmpegHttpUnauthorized,
+  AVPErrorFFmpegHttpForbidden,
+  AVPErrorFFmpegHttpNotFound,
+  AVPErrorFFmpegHttpOther4XX,
+  AVPErrorFFmpegHttpServerError,
 };

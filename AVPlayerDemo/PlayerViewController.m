@@ -29,6 +29,7 @@
   UIButton *_playButton;
   UIButton *_rewindButton;
   UIButton *_forwardButton;
+  UIButton *_muteButton;
   UILabel *_progressLabel;
   UILabel *_leftLabel;
   
@@ -48,6 +49,9 @@
 
   // Interruption handler
   BOOL _isPlayingBeforeInterrupted;
+  
+  // Muted handler
+  BOOL _isMuted;
 }
 @end
 
@@ -63,6 +67,7 @@
   // Other initalization
   _hudVisible = YES;
   _isPlayingBeforeInterrupted = NO;
+  _isMuted = NO;
   
   _videoAspectRatioIndex = 0;
   _videoAspectRatios = @[ @(0),       // Default
@@ -314,6 +319,17 @@
                      action:@selector(forwardDidTouch:)
            forControlEvents:UIControlEventTouchUpInside];
   [_bottomHUD addSubview:_forwardButton];
+  
+  _muteButton = [UIButton buttonWithType:UIButtonTypeCustom];
+  _muteButton.frame = CGRectMake(width - 48, 8, 40, 40);
+  _muteButton.backgroundColor = [UIColor clearColor];
+  _muteButton.showsTouchWhenHighlighted = YES;
+  [_muteButton setImage:[UIImage imageNamed:@"avplayer.bundle/unmuted"]
+               forState:UIControlStateNormal];
+  [_muteButton addTarget:self
+                  action:@selector(mutedDidTouch:)
+        forControlEvents:UIControlEventTouchUpInside];
+  [_bottomHUD addSubview:_muteButton];
 
   _volumeSlider = [[UISlider alloc] initWithFrame:CGRectMake(10, 55, width - (10 * 2), 20)];
   _volumeSlider.autoresizingMask = UIViewAutoresizingFlexibleWidth;
@@ -634,6 +650,21 @@
 #endif
 }
 
+// error handler
+- (void)FFAVPlayerControllerDidOccurError:(FFAVPlayerController *)controller error:(NSError *)error {
+  NSInteger errcode = error.code;
+  if (errcode == EIO ||
+      errcode == ENETDOWN ||
+      errcode == ENETUNREACH ||
+      errcode == ENETRESET ||
+      errcode == ECONNABORTED ||
+      errcode == ECONNRESET ||
+      errcode == ENOTCONN ||
+      errcode == ETIMEDOUT) {
+    NSLog(@"SOME NETWORK ERRORs OCCURED, you can do some recover work here...");
+  }
+}
+
 #pragma mark - AVAudioSession Manager
 
 // Active or de-active audio session with playback category
@@ -906,6 +937,14 @@
   NSTimeInterval duration = [_avplayController duration];
 
   [_avplayController seekto:(current_time / duration - 0.05) * duration];
+}
+
+- (void)mutedDidTouch:(id)sender {
+  _isMuted = !_isMuted;
+  [_avplayController setMuted:_isMuted];
+  
+  [_muteButton setImage:[UIImage imageNamed:_isMuted?@"avplayer.bundle/muted":@"avplayer.bundle/unmuted"]
+               forState:UIControlStateNormal];
 }
 
 - (void)adjustSpeedDidTouch:(id)sender {

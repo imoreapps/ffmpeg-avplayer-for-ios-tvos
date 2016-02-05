@@ -82,6 +82,12 @@ extern NSString *const AVOptionNameHttpCookies;     // (HTTP) set cookies to be 
 @property (nonatomic, assign) BOOL shouldAutoPlay;          // default NO
 @property (nonatomic, assign) AVStreamDiscardOption streamDiscardOption;  // default kAVStreamDiscardOptionNone
 
+/*
+ * Indicates whether or not audio output of the player is muted.
+ * Only affects audio muting for the player instance and not for the device.
+ */
+@property (nonatomic, assign, getter=isMuted) BOOL muted;
+
 /**
  * av tracks and the current av track index
  */
@@ -378,4 +384,6 @@ extern NSString *const AVOptionNameHttpCookies;     // (HTTP) set cookies to be 
 - (void)FFAVPlayerControllerDidEnterFullscreenMode:(FFAVPlayerController *)controller;
 - (void)FFAVPlayerControllerDidExitFullscreenMode:(FFAVPlayerController *)controller;
 
+// error handler
+- (void)FFAVPlayerControllerDidOccurError:(FFAVPlayerController *)controller error:(NSError *)error;
 @end

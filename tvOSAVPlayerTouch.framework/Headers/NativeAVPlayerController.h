@@ -78,6 +78,12 @@
  */
 @property (nonatomic, assign) BOOL enableTimeObserver;
 
+/*
+ * Indicates whether or not audio output of the player is muted.
+ * Only affects audio muting for the player instance and not for the device.
+ */
+@property (nonatomic, assign, getter=isMuted) BOOL muted;
+
 /* OUT parameters */
 
 /*
