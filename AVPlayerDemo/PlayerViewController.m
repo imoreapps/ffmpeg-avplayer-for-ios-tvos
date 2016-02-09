@@ -660,7 +660,10 @@
       errcode == ECONNABORTED ||
       errcode == ECONNRESET ||
       errcode == ENOTCONN ||
-      errcode == ETIMEDOUT) {
+      errcode == ETIMEDOUT ||
+      errcode == AVPErrorFFmpegEOF ||
+      errcode == AVPErrorFFmpegHttpServerError ||
+      errcode == AVPErrorFFmpegHttpOther4XX) {
     NSLog(@"SOME NETWORK ERRORs OCCURED, you can do some recover work here...");
   }
 }

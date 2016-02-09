@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		181F6C9718A4830E005E2C11 /* avplayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 181F6C9618A4830E005E2C11 /* avplayer.bundle */; };
+		1840BB3E1C697A28008560C5 /* tvOSAVPlayerTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188CEF221C69761A00F8BD03 /* tvOSAVPlayerTouch.framework */; };
+		1840BB411C697A34008560C5 /* tvOSAVPlayerTouch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 188CEF221C69761A00F8BD03 /* tvOSAVPlayerTouch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1846CE6C1BCCFB4C00FAE4B2 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1846CE6B1BCCFB4C00FAE4B2 /* libiconv.tbd */; };
 		1846CE6E1BCCFB5100FAE4B2 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1846CE6D1BCCFB5100FAE4B2 /* libbz2.tbd */; };
 		1846CE701BCCFB5A00FAE4B2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1846CE6F1BCCFB5A00FAE4B2 /* libz.tbd */; };
@@ -19,8 +21,6 @@
 		1870D4061C1409C800276B0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1870D4041C1409C800276B0D /* Main.storyboard */; };
 		1870D4081C1409C800276B0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1870D4071C1409C800276B0D /* Assets.xcassets */; };
 		1870D40F1C1409F700276B0D /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1870D40E1C1409F700276B0D /* PlayerViewController.m */; };
-		187363F51C14133F002A18E6 /* tvOSAVPlayerTouch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 187363F21C14118F002A18E6 /* tvOSAVPlayerTouch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		187363F71C141349002A18E6 /* tvOSAVPlayerTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187363F21C14118F002A18E6 /* tvOSAVPlayerTouch.framework */; };
 		1891500D18C5C4C3007EE50D /* test.SMI in Resources */ = {isa = PBXBuildFile; fileRef = 1891500C18C5C4C3007EE50D /* test.SMI */; };
 		1891501C18C5D23F007EE50D /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891501B18C5D23F007EE50D /* UIAlertView+Blocks.m */; };
 		1891501E18C5D455007EE50D /* VideoEffectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1891501D18C5D455007EE50D /* VideoEffectView.xib */; };
@@ -49,13 +49,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		187363F61C14133F002A18E6 /* Embed Frameworks */ = {
+		1840BB401C697A29008560C5 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				187363F51C14133F002A18E6 /* tvOSAVPlayerTouch.framework in Embed Frameworks */,
+				1840BB411C697A34008560C5 /* tvOSAVPlayerTouch.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,7 +81,7 @@
 		1870D4091C1409C800276B0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1870D40D1C1409F700276B0D /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
 		1870D40E1C1409F700276B0D /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
-		187363F21C14118F002A18E6 /* tvOSAVPlayerTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = tvOSAVPlayerTouch.framework; sourceTree = "<group>"; };
+		188CEF221C69761A00F8BD03 /* tvOSAVPlayerTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = tvOSAVPlayerTouch.framework; path = tvOS/appletvsimulator/tvOSAVPlayerTouch.framework; sourceTree = "<group>"; };
 		1891500C18C5C4C3007EE50D /* test.SMI */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.SMI; sourceTree = "<group>"; };
 		1891501A18C5D23F007EE50D /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
 		1891501B18C5D23F007EE50D /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				187363F71C141349002A18E6 /* tvOSAVPlayerTouch.framework in Frameworks */,
+				1840BB3E1C697A28008560C5 /* tvOSAVPlayerTouch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,8 +205,8 @@
 				1846CE6F1BCCFB5A00FAE4B2 /* libz.tbd */,
 				18D6C7451BCD2C4500F57FC8 /* libcrypto.a */,
 				18D6C7461BCD2C4500F57FC8 /* libssl.a */,
+				188CEF221C69761A00F8BD03 /* tvOSAVPlayerTouch.framework */,
 				18D6C7441BCD2C4500F57FC8 /* AVPlayerTouch.framework */,
-				187363F21C14118F002A18E6 /* tvOSAVPlayerTouch.framework */,
 				18D18A811B8EE5C3009499A9 /* VideoToolbox.framework */,
 				18A0BAE518A0C3FF008AA66D /* UIKit.framework */,
 				18A0BAE118A0C3FF008AA66D /* Foundation.framework */,
@@ -270,7 +270,7 @@
 				1870D3F51C1409C700276B0D /* Sources */,
 				1870D3F61C1409C700276B0D /* Frameworks */,
 				1870D3F71C1409C700276B0D /* Resources */,
-				187363F61C14133F002A18E6 /* Embed Frameworks */,
+				1840BB401C697A29008560C5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -310,6 +310,7 @@
 				TargetAttributes = {
 					1870D3F81C1409C700276B0D = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = P76F7CDB9L;
 					};
 					18A0BADD18A0C3FF008AA66D = {
 						DevelopmentTeam = P76F7CDB9L;
@@ -443,11 +444,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/tvOS/appletvsimulator",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -456,6 +460,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.imoreapps.tvOSAVPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -468,12 +473,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/tvOS/appletvsimulator",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -482,6 +490,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.imoreapps.tvOSAVPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -523,7 +532,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "60fb4d23-7f30-4a92-ae50-b89c625ee291";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -569,6 +578,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -605,6 +615,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
