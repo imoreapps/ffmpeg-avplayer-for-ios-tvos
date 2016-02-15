@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @protocol CustomizedAVSource <NSObject>
-@required
-
+@optional
 // translate URI
 + (NSString *)translateURLStringToPath:(NSString *)urlString;
 
+@required
 // last error
 - (NSError *)lastError;
 

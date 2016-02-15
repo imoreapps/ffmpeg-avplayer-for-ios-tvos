@@ -67,19 +67,15 @@
 @property (nonatomic) NSTimeInterval currentPlaybackTime;
 
 /*
- * Is audio file format?
- * @filename - file name.
- * YES: an audio file format, NO otherwise.
- */
-+ (BOOL)isAudioFormatWithFilename:(NSString *)filename;
-
-/*
  * Open media file.
  * @url: url of the media file.
  * @isiOSNativeFormat - is iOS native format?
+ * @options: open options, user can pass customized http headers via AVOptionNameHttpHeader option key.
  * YES - success; NO - failure.
  */
-- (void)openMediaAtURL:(NSURL *)url isiOSNativeFormat:(BOOL)isiOSNativeFormat;
+- (void)openMediaAtURL:(NSURL *)url
+     isiOSNativeFormat:(BOOL)isiOSNativeFormat
+               options:(NSDictionary *)options;
 
 /*
  * Control methods

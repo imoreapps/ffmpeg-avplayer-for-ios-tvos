@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/AVOptions.h</key>
+		<data>
+		evnoj66FMEcS5rczOa/EjsPZn20=
+		</data>
 		<key>Headers/AVPErrors.h</key>
 		<data>
 		QwUKWirZf5+HsE1PLKUYo5+kAZA=
@@ -14,7 +18,7 @@
 		</data>
 		<key>Headers/CustomizedAVSource.h</key>
 		<data>
-		eaUcmXKYd0Z+bBLPyUUJFZpax58=
+		IJnenaR1+KtnCBiRfLrEUGWfk1M=
 		</data>
 		<key>Headers/FFAVParser.h</key>
 		<data>
@@ -22,15 +26,15 @@
 		</data>
 		<key>Headers/FFAVPlayerController.h</key>
 		<data>
-		IeFvWWrD/MGWaqclNLO/eJsDz7E=
+		zNZyB9aw9k/UBScv1AAKOlnZlAk=
 		</data>
 		<key>Headers/NativeAVPlayerController.h</key>
 		<data>
-		PVxpxRCkq0ImYiYHdY4GapQ1xDE=
+		4t0f+1AK1wja63P5ETJrEZTxbCE=
 		</data>
 		<key>Headers/OneAudioPlayer.h</key>
 		<data>
-		FIrud6F9dEWVU23HOEERCAqAT8U=
+		8Bp20LJNe57kMDfcTxcywFJpkMk=
 		</data>
 		<key>Headers/tvOSAVPlayerTouch.h</key>
 		<data>
@@ -38,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iJFnMo77DijhQm5LnM34V0gFnbQ=
+		wqqwpc6ZB7iNC6eV0PeqaR/+z5s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,6 +51,10 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/AVOptions.h</key>
+		<data>
+		evnoj66FMEcS5rczOa/EjsPZn20=
+		</data>
 		<key>Headers/AVPErrors.h</key>
 		<data>
 		QwUKWirZf5+HsE1PLKUYo5+kAZA=
@@ -57,7 +65,7 @@
 		</data>
 		<key>Headers/CustomizedAVSource.h</key>
 		<data>
-		eaUcmXKYd0Z+bBLPyUUJFZpax58=
+		IJnenaR1+KtnCBiRfLrEUGWfk1M=
 		</data>
 		<key>Headers/FFAVParser.h</key>
 		<data>
@@ -65,15 +73,15 @@
 		</data>
 		<key>Headers/FFAVPlayerController.h</key>
 		<data>
-		IeFvWWrD/MGWaqclNLO/eJsDz7E=
+		zNZyB9aw9k/UBScv1AAKOlnZlAk=
 		</data>
 		<key>Headers/NativeAVPlayerController.h</key>
 		<data>
-		PVxpxRCkq0ImYiYHdY4GapQ1xDE=
+		4t0f+1AK1wja63P5ETJrEZTxbCE=
 		</data>
 		<key>Headers/OneAudioPlayer.h</key>
 		<data>
-		FIrud6F9dEWVU23HOEERCAqAT8U=
+		8Bp20LJNe57kMDfcTxcywFJpkMk=
 		</data>
 		<key>Headers/tvOSAVPlayerTouch.h</key>
 		<data>

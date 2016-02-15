@@ -153,11 +153,12 @@
 @property (nonatomic, assign) BOOL enableBuiltinSubtitleRender;
 
 /*
- * Open media file.
+ * Open media file at path with special http header options.
  * @url: url of the media file.
+ * @options: HTTP(s) customized headers, user can pass customized http headers via AVOptionNameHttpHeader option key.
  * YES - success; NO - failure.
  */
-- (BOOL)openMedia:(NSURL *)url;
+- (BOOL)openMedia:(NSURL *)url options:(NSDictionary *)options;
 
 /*
  * Control methods
