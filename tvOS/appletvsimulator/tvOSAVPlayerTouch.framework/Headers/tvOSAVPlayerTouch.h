@@ -15,6 +15,7 @@ FOUNDATION_EXPORT double AVPlayerTouchVersionNumber;
 FOUNDATION_EXPORT const unsigned char AVPlayerTouchVersionString[];
 
 #import <tvOSAVPlayerTouch/AVPErrors.h>
+#import <tvOSAVPlayerTouch/AVOptions.h>
 #import <tvOSAVPlayerTouch/AVPLicense.h>
 #import <tvOSAVPlayerTouch/OneAudioPlayer.h>
 #import <tvOSAVPlayerTouch/NativeAVPlayerController.h>
