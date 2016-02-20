@@ -67,6 +67,14 @@
 @property (nonatomic) NSTimeInterval currentPlaybackTime;
 
 /*
+ * Get/Set the minmum playable buffer size, default size is 0. [Just for FFmpeg player]
+ * @size - the minmum playable buffer size.
+ * @value 0 indicates that minimum playable buffer size feature is disabled.
+ */
+@property (nonatomic) unsigned long long minPlayableBufferSize;
+
+
+/*
  * Open media file.
  * @url: url of the media file.
  * @isiOSNativeFormat - is iOS native format?

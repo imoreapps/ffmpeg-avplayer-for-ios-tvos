@@ -210,6 +210,10 @@
 // state change
 - (void)NativeAVPlayerControllerDidStateChange:(NativeAVPlayerController *)controller;
 
+// buffering...
+- (void)NativeAVPlayerControllerBeginBuffering:(NativeAVPlayerController *)controller;
+- (void)NativeAVPlayerControllerEndBuffering:(NativeAVPlayerController *)controller;
+
 // current play time was changed
 - (void)NativeAVPlayerControllerDidCurTimeChange:(NativeAVPlayerController *)controller position:(NSTimeInterval)position;
 
