@@ -121,4 +121,18 @@
 
 // did occur error
 - (void)OneAudioPlayer:(OneAudioPlayer *)player occuredError:(NSError *)error;
+
+// HTTPs authentication challenge [iOS 8.0 or later]
+
+// Invoked when assistance is required of the application to respond to an authentication challenge.
+// Delegates receive this message when assistance is required of the application to respond to an authentication challenge.
+// If the result is YES, the player expects you to send an appropriate response, either subsequently or immediately,
+// to the NSURLAuthenticationChallenge's sender, i.e. [authenticationChallenge sender],
+// via use of one of the messages defined in the NSURLAuthenticationChallengeSender protocol (see NSAuthenticationChallenge.h).
+// If you intend to respond to the authentication challenge after your handling of -shouldWaitForResponseToAuthenticationChallenge: returns,
+// you must retain the instance of NSURLAuthenticationChallenge until after your response has been made.
+- (BOOL)OneAudioPlayer:(OneAudioPlayer *)player shouldWaitForResponseToAuthenticationChallenge:(NSURLAuthenticationChallenge *)authenticationChallenge;
+
+// Informs the delegate that a prior authentication challenge has been cancelled.
+- (void)OneAudioPlayer:(OneAudioPlayer *)player didCancelAuthenticationChallenge:(NSURLAuthenticationChallenge *)authenticationChallenge;
 @end
