@@ -66,8 +66,8 @@
  * then returns nil FFAVSubtitle object.
  * "fps" default value is 60.
  */
-+ (FFAVSubtitle *)parseSubtitleFile:(NSString *)path encoding:(NSStringEncoding)encoding frameRate:(double)fps;
-- (FFAVSubtitle *)parseSubtitleStreamAtIndex:(NSInteger)streamIndex encoding:(NSStringEncoding)encoding; // streamIndex < self.numberOfSubtitleStreams
++ (FFAVSubtitle *)parseSubtitleFile:(NSString *)path encodingQueryHandler:(CFStringEncoding (^)(const char *subtitleCString))encodingQueryHandler frameRate:(double)fps;
+- (FFAVSubtitle *)parseSubtitleStreamAtIndex:(NSInteger)streamIndex encodingQueryHandler:(CFStringEncoding (^)(const char *subtitleCString))encodingQueryHandler; // streamIndex < self.numberOfSubtitleStreams
 
 @end
 

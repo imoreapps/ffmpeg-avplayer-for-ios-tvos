@@ -12,6 +12,8 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
+@class FFAVSubtitleItem;
+
 @protocol NativeAVPlayerControllerDelegate;
 
 @interface NativeAVPlayerController : NSObject
@@ -174,11 +176,15 @@
 - (void)switchAudioTracker:(int)index;
 
 /*
- * Open or close external subtitle file support.
+ * Open external subtitle file.
  * @path: subtitle file path.
- * @encoding: encoding of the file.
+ * @return: YES for success, NO for failure.
  */
-- (BOOL)openSubtitleFile:(NSString *)path encoding:(CFStringEncoding)encoding;
+- (BOOL)openSubtitleFile:(NSString *)path;
+
+/*
+ * Close the current external subtitle.
+ */
 - (void)closeSubtitleFile;
 
 /*
@@ -216,6 +222,12 @@
 
 // current play time was changed
 - (void)NativeAVPlayerControllerDidCurTimeChange:(NativeAVPlayerController *)controller position:(NSTimeInterval)position;
+
+// query subtitle's encoding
+- (CFStringEncoding)NativeAVPlayerControllerQuerySubtitleEncoding:(NativeAVPlayerController *)controller subtitleCString:(const char *)subtitleCString;
+
+// current subtitle was changed
+- (void)NativeAVPlayerControllerDidSubtitleChange:(NativeAVPlayerController *)controller subtitleItem:(FFAVSubtitleItem *)subtitleItem;
 
 // did finish plaback
 - (void)NativeAVPlayerControllerDidFinishPlayback:(NativeAVPlayerController *)controller;

@@ -189,9 +189,8 @@ typedef NS_ENUM(NSInteger, AVDecodingMode) {
 /*
  * Open or close external subtitle file support.
  * @path: subtitle file path.
- * @encoding: encoding of the file.
  */
-- (BOOL)openSubtitleFile:(NSString *)path encoding:(CFStringEncoding)encoding;
+- (BOOL)openSubtitleFile:(NSString *)path;
 - (void)closeSubtitleFile;
 
 /*
@@ -367,6 +366,9 @@ typedef NS_ENUM(NSInteger, AVDecodingMode) {
 
 // real framerate was changed
 - (void)FFAVPlayerControllerDidFramerateChange:(FFAVPlayerController *)controller framerate:(NSInteger)framerate;
+
+// query subtitle's encoding
+- (CFStringEncoding)FFAVPlayerControllerQuerySubtitleEncoding:(FFAVPlayerController *)controller subtitleCString:(const char *)subtitleCString;
 
 // current subtitle was changed
 - (void)FFAVPlayerControllerDidSubtitleChange:(FFAVPlayerController *)controller subtitleItem:(FFAVSubtitleItem *)subtitleItem;
