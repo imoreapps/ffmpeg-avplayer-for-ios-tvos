@@ -650,6 +650,11 @@
 #endif
 }
 
+// query subtitle's encoding
+- (CFStringEncoding)FFAVPlayerControllerQuerySubtitleEncoding:(FFAVPlayerController *)controller subtitleCString:(const char *)subtitleCString {
+  return kCFStringEncodingGB_18030_2000;
+}
+
 // error handler
 - (void)FFAVPlayerControllerDidOccurError:(FFAVPlayerController *)controller error:(NSError *)error {
   NSInteger errcode = error.code;
@@ -1064,9 +1069,7 @@
                    subtitlePath =
                        [[NSBundle mainBundle] pathForResource:@"test"
                                                        ofType:@"ass"];
-                   if (![_avplayController
-                           openSubtitleFile:subtitlePath
-                                   encoding:kCFStringEncodingGB_18030_2000]) {
+                   if (![_avplayController openSubtitleFile:subtitlePath]) {
                      NSLog(@"Open %@ subtitle file failed!",
                            [subtitlePath lastPathComponent]);
                    }
