@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wqqwpc6ZB7iNC6eV0PeqaR/+z5s=
+		FUg8sKa34cqSE6oHwGzinU2DO3M=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -52,45 +52,115 @@
 	<key>files2</key>
 	<dict>
 		<key>Headers/AVOptions.h</key>
-		<data>
-		evnoj66FMEcS5rczOa/EjsPZn20=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			evnoj66FMEcS5rczOa/EjsPZn20=
+			</data>
+			<key>hash2</key>
+			<data>
+			/4p6j0evRmqJy+FUwASSYWTvatixkMN17+dv3OaKNRY=
+			</data>
+		</dict>
 		<key>Headers/AVPErrors.h</key>
-		<data>
-		QwUKWirZf5+HsE1PLKUYo5+kAZA=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			QwUKWirZf5+HsE1PLKUYo5+kAZA=
+			</data>
+			<key>hash2</key>
+			<data>
+			We1K7yfmH2GeZUHQacLp5z+FvQWdihozv1b2/Kczff4=
+			</data>
+		</dict>
 		<key>Headers/AVPLicense.h</key>
-		<data>
-		8DKZUk4xTAmaeoUh39FOcDgPHeo=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			8DKZUk4xTAmaeoUh39FOcDgPHeo=
+			</data>
+			<key>hash2</key>
+			<data>
+			tDNeZ0rAMTozAFJTTPS5uf2oam51owwoDQCSy17z40Y=
+			</data>
+		</dict>
 		<key>Headers/CustomizedAVSource.h</key>
-		<data>
-		IJnenaR1+KtnCBiRfLrEUGWfk1M=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			IJnenaR1+KtnCBiRfLrEUGWfk1M=
+			</data>
+			<key>hash2</key>
+			<data>
+			4zYvKvYu0aJHzp8vuCjLQIwDZjJdnnbOmPTpCr80F/Y=
+			</data>
+		</dict>
 		<key>Headers/FFAVParser.h</key>
-		<data>
-		gDBlJXfF2IR9ygA1F/zIa3RiQU8=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			gDBlJXfF2IR9ygA1F/zIa3RiQU8=
+			</data>
+			<key>hash2</key>
+			<data>
+			TsLFr21/TzbFJINIrCS/ULdVDCmc9Qc3LdAco9+S5vM=
+			</data>
+		</dict>
 		<key>Headers/FFAVPlayerController.h</key>
-		<data>
-		G1EAFFL9lTTSzPLVZQgUjfcZzrc=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			G1EAFFL9lTTSzPLVZQgUjfcZzrc=
+			</data>
+			<key>hash2</key>
+			<data>
+			jPfi0ZkDcyrfw2w/20VNamUQQlUrEgP/ICmCbsmCQQw=
+			</data>
+		</dict>
 		<key>Headers/NativeAVPlayerController.h</key>
-		<data>
-		kMoBltN/ce04lGtMrDv3xcoaCRE=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			kMoBltN/ce04lGtMrDv3xcoaCRE=
+			</data>
+			<key>hash2</key>
+			<data>
+			QcICvy8QMZUxTEW2NxTx0Mle2gLEXnGpJj4NN5GThbw=
+			</data>
+		</dict>
 		<key>Headers/OneAudioPlayer.h</key>
-		<data>
-		u1L0P0rjorzKoX1KnFIn5C7WRZA=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			u1L0P0rjorzKoX1KnFIn5C7WRZA=
+			</data>
+			<key>hash2</key>
+			<data>
+			NIyVJYyqvGo2WVvqcLCvR99xCLQ2/AKAUBjoZS69ID0=
+			</data>
+		</dict>
 		<key>Headers/tvOSAVPlayerTouch.h</key>
-		<data>
-		2yTGM7Lqurh0MFu2PyyTpJkvf6M=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			2yTGM7Lqurh0MFu2PyyTpJkvf6M=
+			</data>
+			<key>hash2</key>
+			<data>
+			PGIoY1Nb6/5R6dG7IBHem7JXkFUGrR0I6yIILse34+I=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
-		<data>
-		4bPsfC13rp78t7XLGXpZ5w0rkKk=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			4bPsfC13rp78t7XLGXpZ5w0rkKk=
+			</data>
+			<key>hash2</key>
+			<data>
+			nvbexyrh0TCWvUyGmT8Bq04aaxPW7se9gbknh/FRIj8=
+			</data>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>
