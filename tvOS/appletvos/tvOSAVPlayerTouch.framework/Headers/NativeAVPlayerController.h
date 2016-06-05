@@ -12,6 +12,8 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class FFAVSubtitleItem;
 
 @protocol NativeAVPlayerControllerDelegate;
@@ -23,7 +25,7 @@
  * the delegate of NativeAVPlayerController interface.
  * monitor states change of the player.
  */
-@property(nonatomic, weak) id <NativeAVPlayerControllerDelegate> delegate;
+@property(nullable, nonatomic, weak) id <NativeAVPlayerControllerDelegate> delegate;
 
 /*
  * the URL of av resource, now supports file, http and smb protocols.
@@ -92,12 +94,12 @@
  * The drawable view object.
  * user can put it in anywhere.
  */
-@property(nonatomic, retain, readonly) UIView *drawableView;
+@property(nullable, nonatomic, retain, readonly) UIView *drawableView;
 
 /*
  * Query the title of av resource.
  */
-@property(nonatomic, retain, readonly) NSString *title;
+@property(nullable, nonatomic, retain, readonly) NSString *title;
 
 /*
  * Query media total duration in seconds.
@@ -145,7 +147,7 @@
 /*
  * Audio track list, a NSDictionary object list.
  */
-@property (nonatomic, readonly) NSArray *audioTracks;
+@property (nullable, nonatomic, readonly) NSArray *audioTracks;
 
 /*
  * Toggle built-in subtitle render, default YES.
@@ -160,7 +162,7 @@
  * @options: HTTP(s) customized headers, user can pass customized http headers via AVOptionNameHttpHeader option key.
  * YES - success; NO - failure.
  */
-- (BOOL)openMedia:(NSURL *)url options:(NSDictionary *)options;
+- (BOOL)openMedia:(NSURL *)url options:(nullable NSDictionary *)options;
 
 /*
  * Control methods
@@ -253,3 +255,5 @@
 // Informs the delegate that a prior authentication challenge has been cancelled.
 - (void)NativeAVPlayerController:(NativeAVPlayerController *)controller didCancelAuthenticationChallenge:(NSURLAuthenticationChallenge *)authenticationChallenge;
 @end
+
+NS_ASSUME_NONNULL_END

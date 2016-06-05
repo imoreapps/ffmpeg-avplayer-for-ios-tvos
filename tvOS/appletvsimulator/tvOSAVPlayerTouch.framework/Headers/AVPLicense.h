@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface AVPLicense : NSObject
 + (BOOL)register:(NSString *)licenseString;
 @end
+
+NS_ASSUME_NONNULL_END

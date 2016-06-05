@@ -12,6 +12,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class FFAVSubtitle;
 @class FFAVSubtitleItem;
 
@@ -57,7 +59,7 @@
  * generate thumbnail at specified timestamp
  * return an UIImage object if success, otherwise return nil.
  */
-- (UIImage *)thumbnailAtTime:(NSTimeInterval)seconds;
+- (nullable UIImage *)thumbnailAtTime:(NSTimeInterval)seconds;
 
 /*
  * parse subtitle stream and external subtitle file.
@@ -66,8 +68,8 @@
  * then returns nil FFAVSubtitle object.
  * "fps" default value is 60.
  */
-+ (FFAVSubtitle *)parseSubtitleFile:(NSString *)path encodingQueryHandler:(CFStringEncoding (^)(const char *subtitleCString))encodingQueryHandler frameRate:(double)fps;
-- (FFAVSubtitle *)parseSubtitleStreamAtIndex:(NSInteger)streamIndex encodingQueryHandler:(CFStringEncoding (^)(const char *subtitleCString))encodingQueryHandler; // streamIndex < self.numberOfSubtitleStreams
++ (nullable FFAVSubtitle *)parseSubtitleFile:(NSString *)path encodingQueryHandler:(nullable CFStringEncoding (^)(const char *subtitleCString))encodingQueryHandler frameRate:(double)fps;
+- (nullable FFAVSubtitle *)parseSubtitleStreamAtIndex:(NSInteger)streamIndex encodingQueryHandler:(nullable CFStringEncoding (^)(const char *subtitleCString))encodingQueryHandler; // streamIndex < self.numberOfSubtitleStreams
 
 @end
 
@@ -82,3 +84,5 @@
 @property (nonatomic, readonly) long long duration;   // in millisecond
 @property (nonatomic, strong, readonly) NSString *text;
 @end
+
+NS_ASSUME_NONNULL_END

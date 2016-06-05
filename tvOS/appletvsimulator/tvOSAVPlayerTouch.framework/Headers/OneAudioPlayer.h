@@ -11,6 +11,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol OneAudioPlayerDelegate;
 
 @interface OneAudioPlayer : NSObject
@@ -19,7 +21,7 @@
  * The delegate of OneAudioPlayer interface.
  * monitor states change of the player.
  */
-@property (nonatomic, weak) NSObject<OneAudioPlayerDelegate> *delegate;
+@property (nullable, nonatomic, weak) NSObject<OneAudioPlayerDelegate> *delegate;
 
 /*
  * Toggle the universal mode, default is YES.
@@ -83,7 +85,7 @@
  */
 - (void)openMediaAtURL:(NSURL *)url
      isiOSNativeFormat:(BOOL)isiOSNativeFormat
-               options:(NSDictionary *)options;
+               options:(nullable NSDictionary *)options;
 
 /*
  * Control methods
@@ -136,3 +138,5 @@
 // Informs the delegate that a prior authentication challenge has been cancelled.
 - (void)OneAudioPlayer:(OneAudioPlayer *)player didCancelAuthenticationChallenge:(NSURLAuthenticationChallenge *)authenticationChallenge;
 @end
+
+NS_ASSUME_NONNULL_END

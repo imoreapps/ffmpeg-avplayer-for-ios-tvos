@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol CustomizedAVSource <NSObject>
 @optional
 // translate URI
@@ -15,7 +17,7 @@
 
 @required
 // last error
-- (NSError *)lastError;
+- (nullable NSError *)lastError;
 
 // open/close av source
 - (BOOL)open:(NSString *)uri;
@@ -45,7 +47,7 @@
 - (void)unregisterAVSourceClassWithScheme:(NSString *)scheme;
 
 // query an av source class for url scheme
-- (Class)avsourceClassForScheme:(NSString *)scheme;
+- (nullable Class)avsourceClassForScheme:(NSString *)scheme;
 
 #pragma mark - URL Context Store
 
@@ -56,8 +58,10 @@
 - (void)unregisterAVSourceURLContextWithURLKey:(id)key;
 
 // query av source context for an url key
-- (id)avsourceURLContextForURLKey:(id)key;
+- (nullable id)avsourceURLContextForURLKey:(id)key;
 
 // clear all av source contexts
 - (void)clearAllAVSourceURLContexts;
 @end
+
+NS_ASSUME_NONNULL_END
