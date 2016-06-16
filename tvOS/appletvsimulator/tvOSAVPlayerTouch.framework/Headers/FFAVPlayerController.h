@@ -45,6 +45,13 @@ typedef NS_ENUM(NSInteger, AVDecodingMode) {
   kAVDecodingModeHW,
 };
 
+/*
+ * AV sync mode
+ */
+typedef NS_ENUM(NSInteger, AVSyncMode) {
+  kAVSyncModeAudio = 0, // Default
+  kAVSyncModeVideo = 1
+};
 
 @protocol FFAVPlayerControllerDelegate;
 @class FFAVSubtitleItem;
@@ -118,6 +125,12 @@ typedef NS_ENUM(NSInteger, AVDecodingMode) {
  */
 @property (nonatomic, assign) AVDecodingMode decodingMode;
 @property (nonatomic, readonly) BOOL canApplyHWDecoder;
+
+/**
+ * Sync mode
+ * Audio or Video sync mode.
+ */
+@property (nonatomic, assign) AVSyncMode syncMode;
 
 /*
  * Convert ISO 639-1/2B/2T language code to full english name.

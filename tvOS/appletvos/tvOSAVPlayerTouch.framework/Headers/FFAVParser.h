@@ -44,7 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @url - path to media source.
  * @If failed, return NO, otherwise return YES.
  */
-- (BOOL)openMedia:(NSURL *)url withOptions:(NSDictionary *)options;
+- (BOOL)openMedia:(NSURL *)url withOptions:(nullable NSDictionary *)options;
 
 /*
  * Has Dolby Digital, audio, video, subtitle stream.
