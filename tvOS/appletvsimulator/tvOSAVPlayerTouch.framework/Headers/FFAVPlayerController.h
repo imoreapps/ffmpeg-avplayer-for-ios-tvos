@@ -91,6 +91,12 @@ typedef NS_ENUM(NSInteger, AVSyncMode) {
 @property (nullable, nonatomic, strong, readonly) NSArray *subtitleTracks;
 
 /*
+ * Throttles frequency of the current playback time change notification.
+ * 1s (second) by default.
+ */
+@property (nonatomic, assign) NSTimeInterval throttleCurrentPlaybackTimeChangeNotification;
+
+/*
  * Get/Set the minmum playable buffer size, default size is 0.
  * @size - the minmum playable buffer size.
  * @value 0 indicates that minimum playable buffer size feature is disabled.
