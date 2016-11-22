@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "18A0BADD18A0C3FF008AA66D"
-               BuildableName = "AVPlayerDemo.app"
-               BlueprintName = "AVPlayerDemo"
+               BlueprintIdentifier = "180A11F91DE3F4DF00BCE01B"
+               BuildableName = "SwiftDemo.app"
+               BlueprintName = "SwiftDemo"
                ReferencedContainer = "container:AVPlayerDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,23 +28,13 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "18A0BAFE18A0C400008AA66D"
-               BuildableName = "AVPlayerDemoTests.xctest"
-               BlueprintName = "AVPlayerDemoTests"
-               ReferencedContainer = "container:AVPlayerDemo.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "18A0BADD18A0C3FF008AA66D"
-            BuildableName = "AVPlayerDemo.app"
-            BlueprintName = "AVPlayerDemo"
+            BlueprintIdentifier = "180A11F91DE3F4DF00BCE01B"
+            BuildableName = "SwiftDemo.app"
+            BlueprintName = "SwiftDemo"
             ReferencedContainer = "container:AVPlayerDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -60,15 +50,14 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
-      enableGPUFrameCaptureMode = "3"
       allowLocationSimulation = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "18A0BADD18A0C3FF008AA66D"
-            BuildableName = "AVPlayerDemo.app"
-            BlueprintName = "AVPlayerDemo"
+            BlueprintIdentifier = "180A11F91DE3F4DF00BCE01B"
+            BuildableName = "SwiftDemo.app"
+            BlueprintName = "SwiftDemo"
             ReferencedContainer = "container:AVPlayerDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -85,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "18A0BADD18A0C3FF008AA66D"
-            BuildableName = "AVPlayerDemo.app"
-            BlueprintName = "AVPlayerDemo"
+            BlueprintIdentifier = "180A11F91DE3F4DF00BCE01B"
+            BuildableName = "SwiftDemo.app"
+            BlueprintName = "SwiftDemo"
             ReferencedContainer = "container:AVPlayerDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180A11FD1DE3F4DF00BCE01B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A11FC1DE3F4DF00BCE01B /* AppDelegate.swift */; };
+		180A11FF1DE3F4DF00BCE01B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A11FE1DE3F4DF00BCE01B /* ViewController.swift */; };
+		180A12021DE3F4DF00BCE01B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180A12001DE3F4DF00BCE01B /* Main.storyboard */; };
+		180A12041DE3F4DF00BCE01B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180A12031DE3F4DF00BCE01B /* Assets.xcassets */; };
+		180A12071DE3F4DF00BCE01B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180A12051DE3F4DF00BCE01B /* LaunchScreen.storyboard */; };
+		180A120C1DE40DAC00BCE01B /* AVPlayerTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D6C7441BCD2C4500F57FC8 /* AVPlayerTouch.framework */; };
+		180A12161DE4281200BCE01B /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1846CE6D1BCCFB5100FAE4B2 /* libbz2.tbd */; };
+		180A12171DE4281900BCE01B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1846CE6F1BCCFB5A00FAE4B2 /* libz.tbd */; };
+		180A12181DE4291200BCE01B /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D6C7451BCD2C4500F57FC8 /* libcrypto.a */; };
+		180A12191DE4291400BCE01B /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D6C7461BCD2C4500F57FC8 /* libssl.a */; };
+		180A121B1DE4292600BCE01B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 180A121A1DE4292600BCE01B /* libc++.tbd */; };
+		180A121C1DE4292F00BCE01B /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1846CE6B1BCCFB4C00FAE4B2 /* libiconv.tbd */; };
+		180A121E1DE4293E00BCE01B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180A121D1DE4293E00BCE01B /* MediaPlayer.framework */; };
 		181F6C9718A4830E005E2C11 /* avplayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 181F6C9618A4830E005E2C11 /* avplayer.bundle */; };
 		1840BB3E1C697A28008560C5 /* tvOSAVPlayerTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188CEF221C69761A00F8BD03 /* tvOSAVPlayerTouch.framework */; };
 		1840BB411C697A34008560C5 /* tvOSAVPlayerTouch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 188CEF221C69761A00F8BD03 /* tvOSAVPlayerTouch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -63,6 +76,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		180A11FA1DE3F4DF00BCE01B /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		180A11FC1DE3F4DF00BCE01B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		180A11FE1DE3F4DF00BCE01B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		180A12011DE3F4DF00BCE01B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		180A12031DE3F4DF00BCE01B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		180A12061DE3F4DF00BCE01B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		180A12081DE3F4DF00BCE01B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180A12141DE40E0800BCE01B /* AVPlayerTouch-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVPlayerTouch-Header.h"; sourceTree = "<group>"; };
+		180A121A1DE4292600BCE01B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		180A121D1DE4293E00BCE01B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		181F6C9618A4830E005E2C11 /* avplayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = avplayer.bundle; sourceTree = "<group>"; };
 		1846CE6B1BCCFB4C00FAE4B2 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		1846CE6D1BCCFB5100FAE4B2 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
@@ -120,6 +143,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		180A11F71DE3F4DF00BCE01B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180A121E1DE4293E00BCE01B /* MediaPlayer.framework in Frameworks */,
+				180A121C1DE4292F00BCE01B /* libiconv.tbd in Frameworks */,
+				180A121B1DE4292600BCE01B /* libc++.tbd in Frameworks */,
+				180A12171DE4281900BCE01B /* libz.tbd in Frameworks */,
+				180A12161DE4281200BCE01B /* libbz2.tbd in Frameworks */,
+				180A12181DE4291200BCE01B /* libcrypto.a in Frameworks */,
+				180A12191DE4291400BCE01B /* libssl.a in Frameworks */,
+				180A120C1DE40DAC00BCE01B /* AVPlayerTouch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1870D3F61C1409C700276B0D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,6 +190,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180A11FB1DE3F4DF00BCE01B /* SwiftDemo */ = {
+			isa = PBXGroup;
+			children = (
+				180A11FC1DE3F4DF00BCE01B /* AppDelegate.swift */,
+				180A11FE1DE3F4DF00BCE01B /* ViewController.swift */,
+				180A12001DE3F4DF00BCE01B /* Main.storyboard */,
+				180A12031DE3F4DF00BCE01B /* Assets.xcassets */,
+				180A12051DE3F4DF00BCE01B /* LaunchScreen.storyboard */,
+				180A12081DE3F4DF00BCE01B /* Info.plist */,
+				180A12141DE40E0800BCE01B /* AVPlayerTouch-Header.h */,
+			);
+			path = SwiftDemo;
+			sourceTree = "<group>";
+		};
 		1870D3FA1C1409C800276B0D /* tvOSAVPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +234,7 @@
 			children = (
 				18A0BAE718A0C3FF008AA66D /* AVPlayerDemo */,
 				1870D3FA1C1409C800276B0D /* tvOSAVPlayerDemo */,
+				180A11FB1DE3F4DF00BCE01B /* SwiftDemo */,
 				18A0BAE018A0C3FF008AA66D /* Frameworks */,
 				18A0BADF18A0C3FF008AA66D /* Products */,
 			);
@@ -192,6 +245,7 @@
 			children = (
 				18A0BADE18A0C3FF008AA66D /* AVPlayerDemo.app */,
 				1870D3F91C1409C700276B0D /* tvOSAVPlayerDemo.app */,
+				180A11FA1DE3F4DF00BCE01B /* SwiftDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,6 +253,8 @@
 		18A0BAE018A0C3FF008AA66D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				180A121D1DE4293E00BCE01B /* MediaPlayer.framework */,
+				180A121A1DE4292600BCE01B /* libc++.tbd */,
 				1846CE6B1BCCFB4C00FAE4B2 /* libiconv.tbd */,
 				1846CE6D1BCCFB5100FAE4B2 /* libbz2.tbd */,
 				1846CE711BCCFB6100FAE4B2 /* libstdc++.tbd */,
@@ -263,6 +319,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		180A11F91DE3F4DF00BCE01B /* SwiftDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180A120B1DE3F4DF00BCE01B /* Build configuration list for PBXNativeTarget "SwiftDemo" */;
+			buildPhases = (
+				180A11F61DE3F4DF00BCE01B /* Sources */,
+				180A11F71DE3F4DF00BCE01B /* Frameworks */,
+				180A11F81DE3F4DF00BCE01B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftDemo;
+			productName = SwiftDemo;
+			productReference = 180A11FA1DE3F4DF00BCE01B /* SwiftDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		1870D3F81C1409C700276B0D /* tvOSAVPlayerDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1870D40C1C1409C800276B0D /* Build configuration list for PBXNativeTarget "tvOSAVPlayerDemo" */;
@@ -305,9 +378,14 @@
 		18A0BAD618A0C3FF008AA66D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = apple;
 				TargetAttributes = {
+					180A11F91DE3F4DF00BCE01B = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
 					1870D3F81C1409C700276B0D = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = P76F7CDB9L;
@@ -332,11 +410,22 @@
 			targets = (
 				18A0BADD18A0C3FF008AA66D /* AVPlayerDemo */,
 				1870D3F81C1409C700276B0D /* tvOSAVPlayerDemo */,
+				180A11F91DE3F4DF00BCE01B /* SwiftDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		180A11F81DE3F4DF00BCE01B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180A12071DE3F4DF00BCE01B /* LaunchScreen.storyboard in Resources */,
+				180A12041DE3F4DF00BCE01B /* Assets.xcassets in Resources */,
+				180A12021DE3F4DF00BCE01B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1870D3F71C1409C700276B0D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -382,6 +471,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		180A11F61DE3F4DF00BCE01B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180A11FF1DE3F4DF00BCE01B /* ViewController.swift in Sources */,
+				180A11FD1DE3F4DF00BCE01B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1870D3F51C1409C700276B0D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -411,6 +509,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		180A12001DE3F4DF00BCE01B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180A12011DE3F4DF00BCE01B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		180A12051DE3F4DF00BCE01B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180A12061DE3F4DF00BCE01B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		1870D4041C1409C800276B0D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,6 +552,74 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		180A12091DE3F4DF00BCE01B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = SwiftDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imoreapps.SwiftDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftDemo/AVPlayerTouch-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		180A120A1DE3F4DF00BCE01B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = SwiftDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imoreapps.SwiftDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftDemo/AVPlayerTouch-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		1870D40A1C1409C800276B0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -510,14 +692,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -530,7 +717,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -550,21 +737,27 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -593,7 +786,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "AVPlayerDemo/AVPlayerDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/libs",
@@ -626,7 +819,7 @@
 				GCC_PREFIX_HEADER = "AVPlayerDemo/AVPlayerDemo-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "AVPlayerDemo/AVPlayerDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/libs",
@@ -641,6 +834,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		180A120B1DE3F4DF00BCE01B /* Build configuration list for PBXNativeTarget "SwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180A12091DE3F4DF00BCE01B /* Debug */,
+				180A120A1DE3F4DF00BCE01B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1870D40C1C1409C800276B0D /* Build configuration list for PBXNativeTarget "tvOSAVPlayerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

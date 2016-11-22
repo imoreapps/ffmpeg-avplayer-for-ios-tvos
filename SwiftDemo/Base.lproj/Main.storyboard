@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="qKr-aL-y6k">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="NEt-uz-21q">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EXr-Hv-ur8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="qKr-aL-y6k" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Zn-sG-tIc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Jqd-Ay-ZQx" kind="relationship" relationship="rootViewController" id="8aR-WK-eD2"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="6" y="56"/>
+        </scene>
+        <!--Swift Demo-->
+        <scene sceneID="mdm-LF-NdU">
+            <objects>
+                <viewController id="Jqd-Ay-ZQx" customClass="ViewController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bn0-ay-eLj"/>
+                        <viewControllerLayoutGuide type="bottom" id="d3o-Cg-YXX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CXE-Ar-aRH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="edz-K7-lmg">
+                                <rect key="frame" x="16" y="80" width="343" height="326"/>
+                                <color key="backgroundColor" red="0.36078431372549019" green="0.36862745098039218" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="edz-K7-lmg" secondAttribute="height" multiplier="343:326" id="BwR-t5-CwK"/>
+                                    <constraint firstAttribute="width" constant="343" id="GYZ-s1-ZXZ"/>
+                                    <constraint firstAttribute="height" constant="326" id="PlI-GD-osW"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoI-wo-yZJ">
+                                <rect key="frame" x="153.5" y="579" width="68" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="BQh-SI-AuP"/>
+                                    <constraint firstAttribute="width" constant="68" id="yit-Cv-UvK"/>
+                                </constraints>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="togglePlayPauseButton:" destination="Jqd-Ay-ZQx" eventType="touchUpInside" id="n8L-md-OaF"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" continuous="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rt2-lL-jn8">
+                                <rect key="frame" x="14" y="541" width="347" height="31"/>
+                                <connections>
+                                    <action selector="userChangedProgress:" destination="Jqd-Ay-ZQx" eventType="valueChanged" id="WCd-nv-1OQ"/>
+                                </connections>
+                            </slider>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="sPp-NH-wl7">
+                                <rect key="frame" x="177" y="414" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="9Ou-zu-DOi"/>
+                                    <constraint firstAttribute="width" constant="20" id="RY7-TB-kb3"/>
+                                </constraints>
+                                <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uoI-wo-yZJ" firstAttribute="top" secondItem="Rt2-lL-jn8" secondAttribute="bottom" constant="8" id="7h5-HA-EI3"/>
+                            <constraint firstItem="edz-K7-lmg" firstAttribute="centerX" secondItem="CXE-Ar-aRH" secondAttribute="centerX" id="BjH-hn-4Vl"/>
+                            <constraint firstItem="Rt2-lL-jn8" firstAttribute="leading" secondItem="CXE-Ar-aRH" secondAttribute="leadingMargin" id="M2p-7Q-qYF"/>
+                            <constraint firstItem="edz-K7-lmg" firstAttribute="top" secondItem="bn0-ay-eLj" secondAttribute="bottom" constant="16" id="N4o-xQ-Do6"/>
+                            <constraint firstItem="sPp-NH-wl7" firstAttribute="centerX" secondItem="CXE-Ar-aRH" secondAttribute="centerX" id="NEh-eP-Fet"/>
+                            <constraint firstItem="d3o-Cg-YXX" firstAttribute="top" secondItem="uoI-wo-yZJ" secondAttribute="bottom" constant="20" id="UV8-MW-T4e"/>
+                            <constraint firstItem="Rt2-lL-jn8" firstAttribute="centerX" secondItem="CXE-Ar-aRH" secondAttribute="centerX" id="h54-7b-1RR"/>
+                            <constraint firstItem="uoI-wo-yZJ" firstAttribute="centerX" secondItem="CXE-Ar-aRH" secondAttribute="centerX" id="jXt-Vi-Kg2"/>
+                            <constraint firstItem="Rt2-lL-jn8" firstAttribute="trailing" secondItem="CXE-Ar-aRH" secondAttribute="trailingMargin" id="q2C-0T-x9k"/>
+                            <constraint firstItem="sPp-NH-wl7" firstAttribute="top" secondItem="edz-K7-lmg" secondAttribute="bottom" constant="8" id="yQ0-3g-2pK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Swift Demo" id="nQM-82-IcJ"/>
+                    <connections>
+                        <outlet property="drawerableView" destination="edz-K7-lmg" id="hty-kR-SE5"/>
+                        <outlet property="loadingActivityIndicator" destination="sPp-NH-wl7" id="JWD-2k-VJW"/>
+                        <outlet property="playpauseToggleButton" destination="uoI-wo-yZJ" id="y0K-9e-baE"/>
+                        <outlet property="progressSlider" destination="Rt2-lL-jn8" id="6Uc-KY-ct3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QW0-Fn-bxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="480.5" y="55.5"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

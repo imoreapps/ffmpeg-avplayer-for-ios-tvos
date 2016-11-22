@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>SwiftDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>tvOSAVPlayerDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,6 +22,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>180A11F91DE3F4DF00BCE01B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1870D3F81C1409C700276B0D</key>
 		<dict>
 			<key>primary</key>
