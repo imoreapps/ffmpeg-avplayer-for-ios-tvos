@@ -10,7 +10,7 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A295E41C-230B-4DA2-81DD-E0212DB75F4F",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "AF6924B4193EC39876ED476B1881524E7877415D" : "ios-avplayer-framework\/",
+    "AF6924B4193EC39876ED476B1881524E7877415D" : "ffmpeg-avplayer-for-ios\/",
     "CB11C61A0719C6AA3C3F3EB73F63EA114D6B6B90" : "ffmpeg-avplayer-for-ios",
     "906E902657CD9BF43DD0B51BB7EF0FBE4F90CDB4" : "ffmpeg-avplayer-for-ios\/ios-binary-libs\/"
   },

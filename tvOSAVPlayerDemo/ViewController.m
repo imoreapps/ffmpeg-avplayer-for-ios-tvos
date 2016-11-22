@@ -26,7 +26,7 @@
     @{@"url":@"rtmp://edge01.fms.dutchview.nl/botr/bunny.flv",@"title":@"rtmp://Bunny.FLV"},
     @{@"url":@"http://10.0.1.28/2.avi",@"title":@"Local HTTP Stream"},
     @{@"url":@"http://mp3.streampower.be/radio1.aac", @"title":@"HTTP audio"},
-    @{@"url":@"https://geo-live.beatport.com/streams/dvnzolrchbur/listenparis/1449331161/1050.m3u8", @"title":@"HTTPs video"},
+    @{@"url":@"https://mvvideo5.meitudata.com/571090934cea5517.mp4", @"title":@"HTTPs video"},
     @{@"url":@"http://cascam.ou.edu/axis-cgi/mjpg/video.cgi?resolution=320x240", @"title":@"mjpeg video",
       @"avfmtname":@"mjpeg"},
     @{@"url":@"http://webcam.st-malo.com/axis-cgi/mjpg/video.cgi?resolution=352x288", @"title":@"Live Camera video",

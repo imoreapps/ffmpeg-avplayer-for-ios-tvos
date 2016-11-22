@@ -257,7 +257,7 @@ typedef NS_ENUM(NSInteger, AVSyncMode) {
  * @ti - playback start position (0 ~ duration).
  * @If failed, return NO, otherwise return YES.
  */
-- (BOOL)play:(double)ti;
+- (BOOL)play:(NSTimeInterval)ti;
 
 /*
  * Fast forward & backward.
@@ -287,7 +287,7 @@ typedef NS_ENUM(NSInteger, AVSyncMode) {
  * @ti - 0 ~ duration.
  * @This function does not return a value.
  */
-- (void)seekto:(double)ti;
+- (void)seekto:(NSTimeInterval)ti;
 
 /*
  * Enable tracking the realtime frame rate changes.

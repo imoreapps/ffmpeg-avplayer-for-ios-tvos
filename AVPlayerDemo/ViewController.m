@@ -32,8 +32,10 @@
   NSMutableArray *mediaFiles = [NSMutableArray array];
   for (NSString *f in files) {
     NSString *extname = [[f pathExtension] lowercaseString];
-    if ([@[@"mp4",@"mov",@"m4v",@"wav",@"flac",@"ape",@"wma",@"mp3",
-           @"avi",@"wmv",@"rmvb",@"flv",@"f4v",@"swf",@"mkv",@"dat",@"vob",@"mts",@"ogg",@"mpg"] indexOfObject:extname] != NSNotFound) {
+    if ([@[@"mp4",@"mov",@"3gp",@"m4v",@"mp3",@"m4a",@"flac",@"ape",@"wav",
+           @"avi",@"wmv",@"rmvb",@"flv",@"f4v",@"swf",@"mkv",@"dat",@"vob",@"mts",@"m2ts",@"ogg",@"mpg",@"wma",
+           @"srt", @"ass", @"smi"]
+         indexOfObject:extname] != NSNotFound) {
       [mediaFiles addObject:[docPath stringByAppendingPathComponent:f]];
     }
   }
@@ -42,11 +44,11 @@
   // Network files
   _networkfiles =
   @[
-    @{@"url":@"rtsp://218.204.223.237:554/live/1/66251FC11353191F/e7ooqwcfbqjoo80j.sdp",@"title":@"RTSP Stream"},
+    @{@"url":@"rtmp://52.18.210.18/live/asdf",@"title":@"RTSP Stream"},
+    @{@"url":@"rtmp://edge1.peep.im:1935/spotout-origin-1/5799f944e4b0f9f83444152d",@"title":@"rtmp://Bunny.FLV"},
+    @{@"url":@"http://mp3.streampower.be/radio1.aac", @"title":@"HTTP audio"},
+    @{@"url":@"https://mvvideo5.meitudata.com/571090934cea5517.mp4", @"title":@"HTTPs video"},
     @{@"url":@"http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8", @"title":@"Live video"},
-    
-    // for MJPEG av format, we recommend that you pass the input av format name for the player.
-    // because sometimes ffmpeg can not probe the av input format.
     @{@"url":@"http://cascam.ou.edu/axis-cgi/mjpg/video.cgi?resolution=320x240", @"title":@"mjpeg video",
       @"avfmtname":@"mjpeg"},
     @{@"url":@"http://webcam.st-malo.com/axis-cgi/mjpg/video.cgi?resolution=352x288", @"title":@"Live Camera video",
@@ -59,6 +61,10 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+  
+  self.navigationItem.leftBarButtonItem =
+  [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
+                                                target:self action:@selector(reloadFiles)];
   
   self.navigationItem.rightBarButtonItem =
   [[UIBarButtonItem alloc] initWithTitle:@"Open"
@@ -142,9 +148,8 @@
           break;
         }
         case 1: {
-          NSString *filePath = [_files objectAtIndex:indexPath.row];
-          NSURL *url = [NSURL fileURLWithPath:filePath];
-          playerController.mediaURL = url;
+          NSString *path = [_files objectAtIndex:indexPath.row];
+          playerController.mediaURL = [NSURL fileURLWithPath:path];
           break;
         }
       }
