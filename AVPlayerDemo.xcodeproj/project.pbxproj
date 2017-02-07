@@ -323,6 +323,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 180A120B1DE3F4DF00BCE01B /* Build configuration list for PBXNativeTarget "SwiftDemo" */;
 			buildPhases = (
+				182561F31E49A84B00513D63 /* Unarchive framework */,
 				180A11F61DE3F4DF00BCE01B /* Sources */,
 				180A11F71DE3F4DF00BCE01B /* Frameworks */,
 				180A11F81DE3F4DF00BCE01B /* Resources */,
@@ -454,6 +455,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		182561F31E49A84B00513D63 /* Unarchive framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Unarchive framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ ! -e \"libs\" ]; then\nif [ -e \"libs.gz\" ]; then\ntar xzvf libs.gz\nfi\nfi";
+		};
 		18A5E9551BD6FE4300E93F43 /* Unarchive framework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -841,6 +856,7 @@
 				180A120A1DE3F4DF00BCE01B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1870D40C1C1409C800276B0D /* Build configuration list for PBXNativeTarget "tvOSAVPlayerDemo" */ = {
 			isa = XCConfigurationList;

@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/CustomizedAVSource.h</key>
 		<data>
-		mPK9SUldxqb4iaXCUbUm7PTGC+4=
+		yrbz0Z1rNoDbmxhISpEal3kf5Fk=
 		</data>
 		<key>Headers/FFAVParser.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/FFAVPlayerController.h</key>
 		<data>
-		RzGgH9AvCO7jjE/KVTgw8R55aTE=
+		MltQcDoNs5iPEgASJTQ4jP76QFs=
 		</data>
 		<key>Headers/NativeAVPlayerController.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ibH7iJFknHIfAgyFmaSCY28a/GI=
+		0UeZ3uFABQ9XkJUpqEfbqMG9dVE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -88,11 +88,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mPK9SUldxqb4iaXCUbUm7PTGC+4=
+			yrbz0Z1rNoDbmxhISpEal3kf5Fk=
 			</data>
 			<key>hash2</key>
 			<data>
-			8WzVQ0Y4b3hjlPpurpl/2mCnOqdz4yrF7B7dWC2lfuI=
+			jYRwFVv4tXlhCLpBMiPeCCMvEEQWYGLtggaBWYUZzu0=
 			</data>
 		</dict>
 		<key>Headers/FFAVParser.h</key>
@@ -110,11 +110,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RzGgH9AvCO7jjE/KVTgw8R55aTE=
+			MltQcDoNs5iPEgASJTQ4jP76QFs=
 			</data>
 			<key>hash2</key>
 			<data>
-			8APaugPb1rGEvUe3rNTsqjQb4nE4u/HBcJSKaQPgYps=
+			tRse0L9Mt7XfBcj4O/lAEVwXqsoQM5gvENWC5TE4HdY=
 			</data>
 		</dict>
 		<key>Headers/NativeAVPlayerController.h</key>

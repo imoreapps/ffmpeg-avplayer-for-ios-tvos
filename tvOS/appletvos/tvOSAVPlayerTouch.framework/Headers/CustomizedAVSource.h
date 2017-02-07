@@ -23,6 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)open:(NSString *)uri;
 - (void)close;
 
+// abort operations
+- (void)abort;
+
 // query the file size info
 - (unsigned long long)fileSize;
 

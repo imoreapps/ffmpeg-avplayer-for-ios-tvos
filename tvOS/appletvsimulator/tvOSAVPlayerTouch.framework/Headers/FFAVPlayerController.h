@@ -106,7 +106,7 @@ typedef NS_ENUM(NSInteger, AVSyncMode) {
 /**
  * av codec bitrate and video frame rate
  */
-@property (nonatomic, readonly) NSInteger avBitrate;
+@property (nonatomic, readonly) long long avBitrate;
 @property (nonatomic, readonly) NSInteger avFramerate;
 
 /**
