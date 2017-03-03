@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
-    AVPLicense.register("cqdkmfXwl5r4fJ82ehiDuY1sDZ2wZHa5+TymB0iatZicTdn8QtT2AXCKCAHxxTkMxQas/uDRhzpakMZ7bJIjh0PRC24b9Xw96ninPv+1NXG4gqX+3iRKmt0+Kuv7SJKsTMgD6E9YfkZ/M+u/G5PveciPl7DpFIG4o+DZwZ4o+xEB7dsfoOzUKx8fOBTir9Obh3KMpmXxRiCPXUtTOgTZjtlf3NBsKzu14iwtMvNubXU=")
+    AVPLicense.register("NCpwM0uWh86Rq4jIRS3In/RLk1jxwXl/sty7i2nGGt/bkAQDmvR7JAX2GI6d3gGz+bZ40xJVaSr4awvkb8cqrJ6VhVhMvOR0gDK6Aa5DmhKIs7BA/Jh92DTyBwrNgqnTzvS5E7nhhf0kIbumUQeSxi98jh1htv6v4UE1BFC4k4fupIMuohlN00LLx7LW8DA9No7tEnMkYPwnqDOs/NCnxIe1zCPklU1d1qWN6+XWF8k=")
     return true
   }
 
