@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Override point for customization after application launch.
-  [AVPLicense register:@"Nm/MZujYcAA+1eN7kDZbptapARjSGFARVjBN+dZplEmrAf6XKxJQ2S7Axr2446WDTBkfomhGUzVaEGcfE0+PINW0lGEUu4XZlgyJL0mXwNBm4EJ8DzsMol2hG53GZKkBhm2fdhFA/vq+YZuvsJ2dctOqTf4WuIUCdx3gP/+jiUTj+X/tGhmjp3SIcS8yncItukjlVx9L5SkhCH7KfIQTAsjAVlgRM6/xWd6yDwVPViE="];
+  [AVPLicense register:@"zneaHNCzElTcs6RhLDeJm6UKot04AjDe0zdhXCn1scTsxX5Gwv4jRtvH7dNjnKiZw3L/ANm83F0TTB40xawqFYupmFzs4nklcQaqpLr3Osf4KPy5Jf0c+FdvQqmU6mIohnmsvuP4cgOvfy9quLtFcIqLrKYKmhaJSz93Y1F4dg2QwlNwnYyMmQ7sQYQrjqYyADB3vQ0X1eYEtVODG6XfmF7EMzyN5X8Qr4kt1Vrk1Qg="];
   
   return YES;
 }
