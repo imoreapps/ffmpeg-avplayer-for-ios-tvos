@@ -20,7 +20,7 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    let options: [String : Any] = [
+    let options: [AnyHashable : Any] = [
       AVOptionNameAVProbeSize: NSNumber(integerLiteral: 256*1024),
       AVOptionNameAVAnalyzeduration: NSNumber(integerLiteral: 1),
       AVOptionNameHttpUserAgent: "Mozilla/5.0"
