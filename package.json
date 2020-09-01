@@ -1,0 +1,20 @@
+{
+  "name": "ffmpeg-avplayer-for-ios-tvos",
+  "version": "1.0.0",
+  "description": "[![](https://dl.dropboxusercontent.com/u/87201024/avplayer/banner.jpg)](https://dl.dropboxusercontent.com/u/87201024/avplayer/banner.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanujttn/ffmpeg-avplayer-for-ios-tvos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tanujttn/ffmpeg-avplayer-for-ios-tvos/issues"
+  },
+  "homepage": "https://github.com/tanujttn/ffmpeg-avplayer-for-ios-tvos#readme"
+}
