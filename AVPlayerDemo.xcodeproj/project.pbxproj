@@ -7,58 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		180A11FD1DE3F4DF00BCE01B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A11FC1DE3F4DF00BCE01B /* AppDelegate.swift */; };
-		180A11FF1DE3F4DF00BCE01B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A11FE1DE3F4DF00BCE01B /* ViewController.swift */; };
-		180A12021DE3F4DF00BCE01B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180A12001DE3F4DF00BCE01B /* Main.storyboard */; };
-		180A12041DE3F4DF00BCE01B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180A12031DE3F4DF00BCE01B /* Assets.xcassets */; };
-		180A12071DE3F4DF00BCE01B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180A12051DE3F4DF00BCE01B /* LaunchScreen.storyboard */; };
-		180A120C1DE40DAC00BCE01B /* AVPlayerTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D6C7441BCD2C4500F57FC8 /* AVPlayerTouch.framework */; };
-		180A12161DE4281200BCE01B /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1846CE6D1BCCFB5100FAE4B2 /* libbz2.tbd */; };
-		180A12171DE4281900BCE01B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1846CE6F1BCCFB5A00FAE4B2 /* libz.tbd */; };
-		180A12181DE4291200BCE01B /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D6C7451BCD2C4500F57FC8 /* libcrypto.a */; };
-		180A12191DE4291400BCE01B /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D6C7461BCD2C4500F57FC8 /* libssl.a */; };
-		180A121B1DE4292600BCE01B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 180A121A1DE4292600BCE01B /* libc++.tbd */; };
-		180A121C1DE4292F00BCE01B /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1846CE6B1BCCFB4C00FAE4B2 /* libiconv.tbd */; };
-		180A121E1DE4293E00BCE01B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180A121D1DE4293E00BCE01B /* MediaPlayer.framework */; };
-		181F6C9718A4830E005E2C11 /* avplayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 181F6C9618A4830E005E2C11 /* avplayer.bundle */; };
 		1840BB3E1C697A28008560C5 /* tvOSAVPlayerTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188CEF221C69761A00F8BD03 /* tvOSAVPlayerTouch.framework */; };
 		1840BB411C697A34008560C5 /* tvOSAVPlayerTouch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 188CEF221C69761A00F8BD03 /* tvOSAVPlayerTouch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1846CE6C1BCCFB4C00FAE4B2 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1846CE6B1BCCFB4C00FAE4B2 /* libiconv.tbd */; };
-		1846CE6E1BCCFB5100FAE4B2 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1846CE6D1BCCFB5100FAE4B2 /* libbz2.tbd */; };
-		1846CE701BCCFB5A00FAE4B2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1846CE6F1BCCFB5A00FAE4B2 /* libz.tbd */; };
-		1846CE721BCCFB6100FAE4B2 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1846CE711BCCFB6100FAE4B2 /* libstdc++.tbd */; };
-		1869D86218AB8B2B0069EE85 /* MovieInfosViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1869D86118AB8B2B0069EE85 /* MovieInfosViewController.mm */; };
 		1870D3FD1C1409C800276B0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1870D3FC1C1409C800276B0D /* main.m */; };
 		1870D4001C1409C800276B0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1870D3FF1C1409C800276B0D /* AppDelegate.m */; };
 		1870D4031C1409C800276B0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1870D4021C1409C800276B0D /* ViewController.m */; };
 		1870D4061C1409C800276B0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1870D4041C1409C800276B0D /* Main.storyboard */; };
 		1870D4081C1409C800276B0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1870D4071C1409C800276B0D /* Assets.xcassets */; };
 		1870D40F1C1409F700276B0D /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1870D40E1C1409F700276B0D /* PlayerViewController.m */; };
-		1891500D18C5C4C3007EE50D /* test.SMI in Resources */ = {isa = PBXBuildFile; fileRef = 1891500C18C5C4C3007EE50D /* test.SMI */; };
-		1891501C18C5D23F007EE50D /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891501B18C5D23F007EE50D /* UIAlertView+Blocks.m */; };
-		1891501E18C5D455007EE50D /* VideoEffectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1891501D18C5D455007EE50D /* VideoEffectView.xib */; };
-		1891502118C5D53B007EE50D /* VideoEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891502018C5D53B007EE50D /* VideoEffectView.m */; };
-		1891502318C5DC0F007EE50D /* PlaybackSpeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1891502218C5DC0F007EE50D /* PlaybackSpeedView.xib */; };
-		1891502618C5DCE9007EE50D /* AdjustSpeedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891502518C5DCE9007EE50D /* AdjustSpeedView.m */; };
-		18A0BAE218A0C3FF008AA66D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A0BAE118A0C3FF008AA66D /* Foundation.framework */; };
-		18A0BAE418A0C3FF008AA66D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A0BAE318A0C3FF008AA66D /* CoreGraphics.framework */; };
-		18A0BAE618A0C3FF008AA66D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A0BAE518A0C3FF008AA66D /* UIKit.framework */; };
-		18A0BAEC18A0C3FF008AA66D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18A0BAEA18A0C3FF008AA66D /* InfoPlist.strings */; };
-		18A0BAEE18A0C3FF008AA66D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A0BAED18A0C3FF008AA66D /* main.m */; };
-		18A0BAF218A0C3FF008AA66D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A0BAF118A0C3FF008AA66D /* AppDelegate.m */; };
-		18A0BAF518A0C3FF008AA66D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A0BAF318A0C3FF008AA66D /* Main.storyboard */; };
-		18A0BAF818A0C400008AA66D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A0BAF718A0C400008AA66D /* ViewController.m */; };
-		18A0BAFA18A0C400008AA66D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A0BAF918A0C400008AA66D /* Images.xcassets */; };
-		18A5E95B1BD70BB300E93F43 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D6C7451BCD2C4500F57FC8 /* libcrypto.a */; };
-		18A5E95C1BD70BB300E93F43 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D6C7461BCD2C4500F57FC8 /* libssl.a */; };
-		18B8E7BB18A0C6DA003ACB1D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B8E7BA18A0C6DA003ACB1D /* OpenGLES.framework */; };
-		18B8E7BD18A0C6E4003ACB1D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B8E7BC18A0C6E4003ACB1D /* AudioToolbox.framework */; };
-		18B8E7C518A0C737003ACB1D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B8E7C418A0C737003ACB1D /* AVFoundation.framework */; };
-		18B8E7E218A21890003ACB1D /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B8E7E118A21890003ACB1D /* PlayerViewController.m */; };
-		18D18A821B8EE5C3009499A9 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D18A811B8EE5C3009499A9 /* VideoToolbox.framework */; };
-		18D6C7471BCD2C4500F57FC8 /* AVPlayerTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D6C7441BCD2C4500F57FC8 /* AVPlayerTouch.framework */; };
-		18DA08BB18BC5AD500D2C142 /* test.ass in Resources */ = {isa = PBXBuildFile; fileRef = 18DA08BA18BC5AD500D2C142 /* test.ass */; };
-		18DA08E818BF50A400D2C142 /* test.srt in Resources */ = {isa = PBXBuildFile; fileRef = 18DA08E718BF50A400D2C142 /* test.srt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -76,23 +32,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		180A11FA1DE3F4DF00BCE01B /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		180A11FC1DE3F4DF00BCE01B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		180A11FE1DE3F4DF00BCE01B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		180A12011DE3F4DF00BCE01B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		180A12031DE3F4DF00BCE01B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		180A12061DE3F4DF00BCE01B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		180A12081DE3F4DF00BCE01B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		180A12141DE40E0800BCE01B /* AVPlayerTouch-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVPlayerTouch-Header.h"; sourceTree = "<group>"; };
 		180A121A1DE4292600BCE01B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		180A121D1DE4293E00BCE01B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		181F6C9618A4830E005E2C11 /* avplayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = avplayer.bundle; sourceTree = "<group>"; };
 		1846CE6B1BCCFB4C00FAE4B2 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		1846CE6D1BCCFB5100FAE4B2 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 		1846CE6F1BCCFB5A00FAE4B2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		1846CE711BCCFB6100FAE4B2 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
-		1869D86018AB8B2B0069EE85 /* MovieInfosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieInfosViewController.h; sourceTree = "<group>"; };
-		1869D86118AB8B2B0069EE85 /* MovieInfosViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MovieInfosViewController.mm; sourceTree = "<group>"; };
 		1870D3F91C1409C700276B0D /* tvOSAVPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOSAVPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1870D3FC1C1409C800276B0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1870D3FE1C1409C800276B0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,59 +49,15 @@
 		1870D40D1C1409F700276B0D /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
 		1870D40E1C1409F700276B0D /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		188CEF221C69761A00F8BD03 /* tvOSAVPlayerTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = tvOSAVPlayerTouch.framework; path = tvOS/appletvsimulator/tvOSAVPlayerTouch.framework; sourceTree = "<group>"; };
-		1891500C18C5C4C3007EE50D /* test.SMI */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.SMI; sourceTree = "<group>"; };
-		1891501A18C5D23F007EE50D /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
-		1891501B18C5D23F007EE50D /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
-		1891501D18C5D455007EE50D /* VideoEffectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoEffectView.xib; sourceTree = "<group>"; };
-		1891501F18C5D53B007EE50D /* VideoEffectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoEffectView.h; sourceTree = "<group>"; };
-		1891502018C5D53B007EE50D /* VideoEffectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoEffectView.m; sourceTree = "<group>"; };
-		1891502218C5DC0F007EE50D /* PlaybackSpeedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaybackSpeedView.xib; sourceTree = "<group>"; };
-		1891502418C5DCE9007EE50D /* AdjustSpeedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdjustSpeedView.h; sourceTree = "<group>"; };
-		1891502518C5DCE9007EE50D /* AdjustSpeedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdjustSpeedView.m; sourceTree = "<group>"; };
-		18A0BADE18A0C3FF008AA66D /* AVPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A0BAE118A0C3FF008AA66D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		18A0BAE318A0C3FF008AA66D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		18A0BAE518A0C3FF008AA66D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		18A0BAE918A0C3FF008AA66D /* AVPlayerDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AVPlayerDemo-Info.plist"; sourceTree = "<group>"; };
-		18A0BAEB18A0C3FF008AA66D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		18A0BAED18A0C3FF008AA66D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		18A0BAEF18A0C3FF008AA66D /* AVPlayerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVPlayerDemo-Prefix.pch"; sourceTree = "<group>"; };
-		18A0BAF018A0C3FF008AA66D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		18A0BAF118A0C3FF008AA66D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18A0BAF418A0C3FF008AA66D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		18A0BAF618A0C400008AA66D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18A0BAF718A0C400008AA66D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		18A0BAF918A0C400008AA66D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		18B8E7BA18A0C6DA003ACB1D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		18B8E7BC18A0C6E4003ACB1D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		18B8E7C418A0C737003ACB1D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		18B8E7C618A0C73F003ACB1D /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
-		18B8E7E018A21890003ACB1D /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
-		18B8E7E118A21890003ACB1D /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
-		18D18A811B8EE5C3009499A9 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		18D6C7441BCD2C4500F57FC8 /* AVPlayerTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVPlayerTouch.framework; path = libs/AVPlayerTouch.framework; sourceTree = "<group>"; };
 		18D6C7451BCD2C4500F57FC8 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = libs/libcrypto.a; sourceTree = "<group>"; };
 		18D6C7461BCD2C4500F57FC8 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = libs/libssl.a; sourceTree = "<group>"; };
-		18DA08BA18BC5AD500D2C142 /* test.ass */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.ass; sourceTree = "<group>"; };
-		18DA08E718BF50A400D2C142 /* test.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.srt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		180A11F71DE3F4DF00BCE01B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				180A121E1DE4293E00BCE01B /* MediaPlayer.framework in Frameworks */,
-				180A121C1DE4292F00BCE01B /* libiconv.tbd in Frameworks */,
-				180A121B1DE4292600BCE01B /* libc++.tbd in Frameworks */,
-				180A12171DE4281900BCE01B /* libz.tbd in Frameworks */,
-				180A12161DE4281200BCE01B /* libbz2.tbd in Frameworks */,
-				180A12181DE4291200BCE01B /* libcrypto.a in Frameworks */,
-				180A12191DE4291400BCE01B /* libssl.a in Frameworks */,
-				180A120C1DE40DAC00BCE01B /* AVPlayerTouch.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1870D3F61C1409C700276B0D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -166,44 +66,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		18A0BADB18A0C3FF008AA66D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1846CE6C1BCCFB4C00FAE4B2 /* libiconv.tbd in Frameworks */,
-				1846CE721BCCFB6100FAE4B2 /* libstdc++.tbd in Frameworks */,
-				1846CE6E1BCCFB5100FAE4B2 /* libbz2.tbd in Frameworks */,
-				1846CE701BCCFB5A00FAE4B2 /* libz.tbd in Frameworks */,
-				18A5E95B1BD70BB300E93F43 /* libcrypto.a in Frameworks */,
-				18A5E95C1BD70BB300E93F43 /* libssl.a in Frameworks */,
-				18D6C7471BCD2C4500F57FC8 /* AVPlayerTouch.framework in Frameworks */,
-				18A0BAE218A0C3FF008AA66D /* Foundation.framework in Frameworks */,
-				18A0BAE618A0C3FF008AA66D /* UIKit.framework in Frameworks */,
-				18A0BAE418A0C3FF008AA66D /* CoreGraphics.framework in Frameworks */,
-				18B8E7C518A0C737003ACB1D /* AVFoundation.framework in Frameworks */,
-				18B8E7BD18A0C6E4003ACB1D /* AudioToolbox.framework in Frameworks */,
-				18B8E7BB18A0C6DA003ACB1D /* OpenGLES.framework in Frameworks */,
-				18D18A821B8EE5C3009499A9 /* VideoToolbox.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		180A11FB1DE3F4DF00BCE01B /* SwiftDemo */ = {
-			isa = PBXGroup;
-			children = (
-				180A11FC1DE3F4DF00BCE01B /* AppDelegate.swift */,
-				180A11FE1DE3F4DF00BCE01B /* ViewController.swift */,
-				180A12001DE3F4DF00BCE01B /* Main.storyboard */,
-				180A12031DE3F4DF00BCE01B /* Assets.xcassets */,
-				180A12051DE3F4DF00BCE01B /* LaunchScreen.storyboard */,
-				180A12081DE3F4DF00BCE01B /* Info.plist */,
-				180A12141DE40E0800BCE01B /* AVPlayerTouch-Header.h */,
-			);
-			path = SwiftDemo;
-			sourceTree = "<group>";
-		};
 		1870D3FA1C1409C800276B0D /* tvOSAVPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,9 +97,7 @@
 		18A0BAD518A0C3FF008AA66D = {
 			isa = PBXGroup;
 			children = (
-				18A0BAE718A0C3FF008AA66D /* AVPlayerDemo */,
 				1870D3FA1C1409C800276B0D /* tvOSAVPlayerDemo */,
-				180A11FB1DE3F4DF00BCE01B /* SwiftDemo */,
 				18A0BAE018A0C3FF008AA66D /* Frameworks */,
 				18A0BADF18A0C3FF008AA66D /* Products */,
 			);
@@ -243,9 +106,7 @@
 		18A0BADF18A0C3FF008AA66D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				18A0BADE18A0C3FF008AA66D /* AVPlayerDemo.app */,
 				1870D3F91C1409C700276B0D /* tvOSAVPlayerDemo.app */,
-				180A11FA1DE3F4DF00BCE01B /* SwiftDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -253,7 +114,6 @@
 		18A0BAE018A0C3FF008AA66D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				180A121D1DE4293E00BCE01B /* MediaPlayer.framework */,
 				180A121A1DE4292600BCE01B /* libc++.tbd */,
 				1846CE6B1BCCFB4C00FAE4B2 /* libiconv.tbd */,
 				1846CE6D1BCCFB5100FAE4B2 /* libbz2.tbd */,
@@ -263,80 +123,16 @@
 				18D6C7461BCD2C4500F57FC8 /* libssl.a */,
 				188CEF221C69761A00F8BD03 /* tvOSAVPlayerTouch.framework */,
 				18D6C7441BCD2C4500F57FC8 /* AVPlayerTouch.framework */,
-				18D18A811B8EE5C3009499A9 /* VideoToolbox.framework */,
 				18A0BAE518A0C3FF008AA66D /* UIKit.framework */,
 				18A0BAE118A0C3FF008AA66D /* Foundation.framework */,
-				18B8E7C618A0C73F003ACB1D /* AudioUnit.framework */,
 				18B8E7C418A0C737003ACB1D /* AVFoundation.framework */,
-				18B8E7BC18A0C6E4003ACB1D /* AudioToolbox.framework */,
-				18B8E7BA18A0C6DA003ACB1D /* OpenGLES.framework */,
-				18A0BAE318A0C3FF008AA66D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		18A0BAE718A0C3FF008AA66D /* AVPlayerDemo */ = {
-			isa = PBXGroup;
-			children = (
-				18A0BAF018A0C3FF008AA66D /* AppDelegate.h */,
-				18A0BAF118A0C3FF008AA66D /* AppDelegate.m */,
-				18A0BAF318A0C3FF008AA66D /* Main.storyboard */,
-				18A0BAF618A0C400008AA66D /* ViewController.h */,
-				18A0BAF718A0C400008AA66D /* ViewController.m */,
-				18B8E7E018A21890003ACB1D /* PlayerViewController.h */,
-				18B8E7E118A21890003ACB1D /* PlayerViewController.m */,
-				1869D86018AB8B2B0069EE85 /* MovieInfosViewController.h */,
-				1869D86118AB8B2B0069EE85 /* MovieInfosViewController.mm */,
-				1891501A18C5D23F007EE50D /* UIAlertView+Blocks.h */,
-				1891501B18C5D23F007EE50D /* UIAlertView+Blocks.m */,
-				1891501F18C5D53B007EE50D /* VideoEffectView.h */,
-				1891502018C5D53B007EE50D /* VideoEffectView.m */,
-				1891502418C5DCE9007EE50D /* AdjustSpeedView.h */,
-				1891502518C5DCE9007EE50D /* AdjustSpeedView.m */,
-				181F6C9618A4830E005E2C11 /* avplayer.bundle */,
-				18A0BAF918A0C400008AA66D /* Images.xcassets */,
-				18A0BAE818A0C3FF008AA66D /* Supporting Files */,
-			);
-			path = AVPlayerDemo;
-			sourceTree = "<group>";
-		};
-		18A0BAE818A0C3FF008AA66D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				18DA08E718BF50A400D2C142 /* test.srt */,
-				18DA08BA18BC5AD500D2C142 /* test.ass */,
-				1891500C18C5C4C3007EE50D /* test.SMI */,
-				18A0BAE918A0C3FF008AA66D /* AVPlayerDemo-Info.plist */,
-				18A0BAEA18A0C3FF008AA66D /* InfoPlist.strings */,
-				18A0BAED18A0C3FF008AA66D /* main.m */,
-				18A0BAEF18A0C3FF008AA66D /* AVPlayerDemo-Prefix.pch */,
-				1891501D18C5D455007EE50D /* VideoEffectView.xib */,
-				1891502218C5DC0F007EE50D /* PlaybackSpeedView.xib */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		180A11F91DE3F4DF00BCE01B /* SwiftDemo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 180A120B1DE3F4DF00BCE01B /* Build configuration list for PBXNativeTarget "SwiftDemo" */;
-			buildPhases = (
-				182561F31E49A84B00513D63 /* Unarchive framework */,
-				180A11F61DE3F4DF00BCE01B /* Sources */,
-				180A11F71DE3F4DF00BCE01B /* Frameworks */,
-				180A11F81DE3F4DF00BCE01B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwiftDemo;
-			productName = SwiftDemo;
-			productReference = 180A11FA1DE3F4DF00BCE01B /* SwiftDemo.app */;
-			productType = "com.apple.product-type.application";
-		};
 		1870D3F81C1409C700276B0D /* tvOSAVPlayerDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1870D40C1C1409C800276B0D /* Build configuration list for PBXNativeTarget "tvOSAVPlayerDemo" */;
@@ -355,24 +151,6 @@
 			productReference = 1870D3F91C1409C700276B0D /* tvOSAVPlayerDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		18A0BADD18A0C3FF008AA66D /* AVPlayerDemo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 18A0BB1018A0C400008AA66D /* Build configuration list for PBXNativeTarget "AVPlayerDemo" */;
-			buildPhases = (
-				18A5E9551BD6FE4300E93F43 /* Unarchive framework */,
-				18A0BADA18A0C3FF008AA66D /* Sources */,
-				18A0BADC18A0C3FF008AA66D /* Resources */,
-				18A0BADB18A0C3FF008AA66D /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AVPlayerDemo;
-			productName = AVPlayerDemo;
-			productReference = 18A0BADE18A0C3FF008AA66D /* AVPlayerDemo.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -383,15 +161,8 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = apple;
 				TargetAttributes = {
-					180A11F91DE3F4DF00BCE01B = {
-						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
-					};
 					1870D3F81C1409C700276B0D = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = P76F7CDB9L;
-					};
-					18A0BADD18A0C3FF008AA66D = {
 						DevelopmentTeam = P76F7CDB9L;
 					};
 				};
@@ -410,24 +181,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				18A0BADD18A0C3FF008AA66D /* AVPlayerDemo */,
 				1870D3F81C1409C700276B0D /* tvOSAVPlayerDemo */,
-				180A11F91DE3F4DF00BCE01B /* SwiftDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		180A11F81DE3F4DF00BCE01B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				180A12071DE3F4DF00BCE01B /* LaunchScreen.storyboard in Resources */,
-				180A12041DE3F4DF00BCE01B /* Assets.xcassets in Resources */,
-				180A12021DE3F4DF00BCE01B /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1870D3F71C1409C700276B0D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -437,65 +196,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		18A0BADC18A0C3FF008AA66D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				18A0BAEC18A0C3FF008AA66D /* InfoPlist.strings in Resources */,
-				1891502318C5DC0F007EE50D /* PlaybackSpeedView.xib in Resources */,
-				1891501E18C5D455007EE50D /* VideoEffectView.xib in Resources */,
-				18A0BAF518A0C3FF008AA66D /* Main.storyboard in Resources */,
-				18A0BAFA18A0C400008AA66D /* Images.xcassets in Resources */,
-				181F6C9718A4830E005E2C11 /* avplayer.bundle in Resources */,
-				18DA08BB18BC5AD500D2C142 /* test.ass in Resources */,
-				1891500D18C5C4C3007EE50D /* test.SMI in Resources */,
-				18DA08E818BF50A400D2C142 /* test.srt in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		182561F31E49A84B00513D63 /* Unarchive framework */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Unarchive framework";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ ! -e \"libs\" ]; then\nif [ -e \"libs.gz\" ]; then\ntar xzvf libs.gz\nfi\nfi";
-		};
-		18A5E9551BD6FE4300E93F43 /* Unarchive framework */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Unarchive framework";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ ! -e \"libs\" ]; then\n    if [ -e \"libs.gz\" ]; then\n        tar xzvf libs.gz\n    fi\nfi";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		180A11F61DE3F4DF00BCE01B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				180A11FF1DE3F4DF00BCE01B /* ViewController.swift in Sources */,
-				180A11FD1DE3F4DF00BCE01B /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1870D3F51C1409C700276B0D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -507,40 +210,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		18A0BADA18A0C3FF008AA66D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				18A0BAF818A0C400008AA66D /* ViewController.m in Sources */,
-				1891502118C5D53B007EE50D /* VideoEffectView.m in Sources */,
-				1869D86218AB8B2B0069EE85 /* MovieInfosViewController.mm in Sources */,
-				1891502618C5DCE9007EE50D /* AdjustSpeedView.m in Sources */,
-				18A0BAF218A0C3FF008AA66D /* AppDelegate.m in Sources */,
-				1891501C18C5D23F007EE50D /* UIAlertView+Blocks.m in Sources */,
-				18B8E7E218A21890003ACB1D /* PlayerViewController.m in Sources */,
-				18A0BAEE18A0C3FF008AA66D /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		180A12001DE3F4DF00BCE01B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				180A12011DE3F4DF00BCE01B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		180A12051DE3F4DF00BCE01B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				180A12061DE3F4DF00BCE01B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		1870D4041C1409C800276B0D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -549,93 +221,9 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		18A0BAEA18A0C3FF008AA66D /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18A0BAEB18A0C3FF008AA66D /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		18A0BAF318A0C3FF008AA66D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18A0BAF418A0C3FF008AA66D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		180A12091DE3F4DF00BCE01B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/libs",
-				);
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = SwiftDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/libs",
-				);
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.imoreapps.SwiftDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OBJC_BRIDGING_HEADER = "SwiftDemo/AVPlayerTouch-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		180A120A1DE3F4DF00BCE01B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/libs",
-				);
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = SwiftDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/libs",
-				);
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.imoreapps.SwiftDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SwiftDemo/AVPlayerTouch-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		1870D40A1C1409C800276B0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -780,87 +368,9 @@
 			};
 			name = Release;
 		};
-		18A0BB1118A0C400008AA66D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/libs",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AVPlayerDemo/AVPlayerDemo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "AVPlayerDemo/AVPlayerDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/libs",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.imoreapps.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "27b3d534-fd28-4e2a-895f-b41883fdda56";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		18A0BB1218A0C400008AA66D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/libs",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AVPlayerDemo/AVPlayerDemo-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "AVPlayerDemo/AVPlayerDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/libs",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.imoreapps.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		180A120B1DE3F4DF00BCE01B /* Build configuration list for PBXNativeTarget "SwiftDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				180A12091DE3F4DF00BCE01B /* Debug */,
-				180A120A1DE3F4DF00BCE01B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		1870D40C1C1409C800276B0D /* Build configuration list for PBXNativeTarget "tvOSAVPlayerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -875,15 +385,6 @@
 			buildConfigurations = (
 				18A0BB0E18A0C400008AA66D /* Debug */,
 				18A0BB0F18A0C400008AA66D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		18A0BB1018A0C400008AA66D /* Build configuration list for PBXNativeTarget "AVPlayerDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				18A0BB1118A0C400008AA66D /* Debug */,
-				18A0BB1218A0C400008AA66D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
